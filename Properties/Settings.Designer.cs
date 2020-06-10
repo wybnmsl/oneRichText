@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace 一个.Properties
+namespace origin.Properties
 {
 
 
