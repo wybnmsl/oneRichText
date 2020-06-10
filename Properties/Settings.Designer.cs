@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DemoRichText.Properties
+namespace 一个.Properties
 {
 
 

@@ -49,10 +49,10 @@
             this.分区知识库tableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.分区listView = new System.Windows.Forms.ListView();
             this.知识库listView = new System.Windows.Forms.ListView();
             this.添加分区button = new System.Windows.Forms.Button();
             this.添加知识库button = new System.Windows.Forms.Button();
+            this.分区listView = new System.Windows.Forms.ListView();
             this.文本编辑区 = new System.Windows.Forms.RichTextBox();
             this.上菜单栏menuStrip.SuspendLayout();
             this.左边栏tablelayout.SuspendLayout();
@@ -62,6 +62,7 @@
             // 上菜单栏menuStrip
             // 
             this.上菜单栏menuStrip.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.上菜单栏menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.上菜单栏menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.文件ToolStripMenuItem,
             this.开始ToolStripMenuItem,
@@ -69,6 +70,7 @@
             this.插入ToolStripMenuItem});
             this.上菜单栏menuStrip.Location = new System.Drawing.Point(0, 0);
             this.上菜单栏menuStrip.Name = "上菜单栏menuStrip";
+            this.上菜单栏menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.上菜单栏menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.上菜单栏menuStrip.Size = new System.Drawing.Size(1005, 25);
             this.上菜单栏menuStrip.TabIndex = 0;
@@ -92,31 +94,31 @@
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.打开ToolStripMenuItem.Text = "打开";
             // 
             // 新建ToolStripMenuItem
             // 
             this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
-            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.新建ToolStripMenuItem.Text = "新建";
             // 
             // 导入ToolStripMenuItem
             // 
             this.导入ToolStripMenuItem.Name = "导入ToolStripMenuItem";
-            this.导入ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.导入ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.导入ToolStripMenuItem.Text = "导入";
             // 
             // 导出ToolStripMenuItem
             // 
             this.导出ToolStripMenuItem.Name = "导出ToolStripMenuItem";
-            this.导出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.导出ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.导出ToolStripMenuItem.Text = "导出";
             // 
             // 保存ToolStripMenuItem
             // 
             this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
-            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.保存ToolStripMenuItem.Text = "保存";
             // 
             // 开始ToolStripMenuItem
@@ -131,7 +133,7 @@
             // 粘贴ToolStripMenuItem
             // 
             this.粘贴ToolStripMenuItem.Name = "粘贴ToolStripMenuItem";
-            this.粘贴ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.粘贴ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.粘贴ToolStripMenuItem.Text = "粘贴";
             // 
             // 编辑ToolStripMenuItem
@@ -155,20 +157,19 @@
             // 文件ToolStripMenuItem1
             // 
             this.文件ToolStripMenuItem1.Name = "文件ToolStripMenuItem1";
-            this.文件ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.文件ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.文件ToolStripMenuItem1.Text = "文件";
             // 
             // 图片ToolStripMenuItem
             // 
             this.图片ToolStripMenuItem.Name = "图片ToolStripMenuItem";
-            this.图片ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.图片ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.图片ToolStripMenuItem.Text = "图片";
-            this.图片ToolStripMenuItem.Click += new System.EventHandler(this.图片ToolStripMenuItem_Click);
             // 
             // 音乐ToolStripMenuItem
             // 
             this.音乐ToolStripMenuItem.Name = "音乐ToolStripMenuItem";
-            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.音乐ToolStripMenuItem.Text = "音乐";
             // 
             // 编辑分区知识库button
@@ -222,10 +223,10 @@
             this.分区知识库tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.分区知识库tableLayout.Controls.Add(this.label1, 0, 0);
             this.分区知识库tableLayout.Controls.Add(this.label2, 1, 0);
-            this.分区知识库tableLayout.Controls.Add(this.分区listView, 0, 1);
             this.分区知识库tableLayout.Controls.Add(this.知识库listView, 1, 1);
             this.分区知识库tableLayout.Controls.Add(this.添加分区button, 0, 2);
             this.分区知识库tableLayout.Controls.Add(this.添加知识库button, 1, 2);
+            this.分区知识库tableLayout.Controls.Add(this.分区listView, 0, 1);
             this.分区知识库tableLayout.Dock = System.Windows.Forms.DockStyle.Left;
             this.分区知识库tableLayout.Location = new System.Drawing.Point(61, 25);
             this.分区知识库tableLayout.Name = "分区知识库tableLayout";
@@ -262,16 +263,6 @@
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // 分区listView
-            // 
-            this.分区listView.BackColor = System.Drawing.Color.Gainsboro;
-            this.分区listView.HideSelection = false;
-            this.分区listView.Location = new System.Drawing.Point(3, 33);
-            this.分区listView.Name = "分区listView";
-            this.分区listView.Size = new System.Drawing.Size(179, 486);
-            this.分区listView.TabIndex = 2;
-            this.分区listView.UseCompatibleStateImageBehavior = false;
-            // 
             // 知识库listView
             // 
             this.知识库listView.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -281,6 +272,7 @@
             this.知识库listView.Size = new System.Drawing.Size(180, 486);
             this.知识库listView.TabIndex = 3;
             this.知识库listView.UseCompatibleStateImageBehavior = false;
+            this.知识库listView.SelectedIndexChanged += new System.EventHandler(this.知识库listView_SelectedIndexChanged);
             // 
             // 添加分区button
             // 
@@ -307,14 +299,29 @@
             this.添加知识库button.Text = "添加知识库";
             this.添加知识库button.UseVisualStyleBackColor = false;
             // 
+            // 分区listView
+            // 
+            this.分区listView.BackColor = System.Drawing.Color.Gainsboro;
+            this.分区listView.FullRowSelect = true;
+            this.分区listView.HideSelection = false;
+            this.分区listView.Location = new System.Drawing.Point(3, 33);
+            this.分区listView.Name = "分区listView";
+            this.分区listView.Size = new System.Drawing.Size(179, 486);
+            this.分区listView.TabIndex = 2;
+            this.分区listView.UseCompatibleStateImageBehavior = false;
+            this.分区listView.View = System.Windows.Forms.View.List;
+            this.分区listView.SelectedIndexChanged += new System.EventHandler(this.分区listView_SelectedIndexChanged);
+            // 
             // 文本编辑区
             // 
             this.文本编辑区.Dock = System.Windows.Forms.DockStyle.Fill;
             this.文本编辑区.Location = new System.Drawing.Point(432, 25);
+            this.文本编辑区.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.文本编辑区.Name = "文本编辑区";
             this.文本编辑区.Size = new System.Drawing.Size(573, 562);
             this.文本编辑区.TabIndex = 13;
             this.文本编辑区.Text = "";
+            this.文本编辑区.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Form1
             // 
