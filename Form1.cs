@@ -783,5 +783,134 @@ namespace origin
 
         #endregion
 
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            搜索结果listView.Items.Clear();
+            string 搜索内容 = textBox1.Text;
+            string 默认路径 = rootpath + @"\" + "txt";
+            if (搜索内容 != null)
+            {
+                DirectoryInfo di = new DirectoryInfo(默认路径);
+                foreach (var item in di.GetDirectories())
+                {
+                    if (item.Name.Contains( 搜索内容))
+                    {
+                        ListViewItem tn1 = default(ListViewItem);
+                        try
+                        {
+                            tn1 = new ListViewItem("分区:"+Path.GetFileName(item.FullName));
+                            tn1.Tag = item.Name;
+                            搜索结果listView.Items.Add(tn1);
+                        }
+                        catch
+                        {
+                            if (tn1 != null)
+                                搜索结果listView.Items.Remove(tn1);
+                        }
+                    }
+                    Application.DoEvents();
+                    DirectoryInfo 分区名 = new DirectoryInfo(item.FullName);
+                    foreach(var 知识文件 in 分区名.GetFiles())
+                    {
+                        if (知识文件.Name.Contains(搜索内容))
+                        {
+                            ListViewItem tn2 = default(ListViewItem);
+                            try
+                            {
+                                tn2 = new ListViewItem(" 知识库:" + Path.GetFileName(知识文件.FullName));
+                                tn2.Tag = 分区名.Name+"?"+知识文件.Name;
+                                搜索结果listView.Items.Add(tn2);
+                            }
+                            catch
+                            {
+                                if (tn2 != null)
+                                    搜索结果listView.Items.Remove(tn2);
+                            }
+                        }
+                        StreamReader 文件内容 = new StreamReader(知识文件.FullName, Encoding.UTF8);
+                        string aLine;
+                        // 控制while循环是否进行的变量，true打印文本，false跳出循环
+                        int line = 1;
+                        while (true)
+                        {
+                            
+                            aLine = 文件内容.ReadLine();
+                            // aline=null -> 文本读完了，那么控制量condition结合if语句 跳出循环
+                            if (aLine == null)
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                if (aLine.Contains(搜索内容))
+                                {
+                                    ListViewItem tn3 = default(ListViewItem);
+                                    try
+                                    {
+                                        tn3 = new ListViewItem("  内容:" + Path.GetFileName(知识文件.FullName)+"第"+line+"行");
+                                        tn3.Tag = 分区名.Name + "?" + 知识文件.Name+"?"+知识文件.FullName;
+                                        搜索结果listView.Items.Add(tn3);
+                                    }
+                                    catch
+                                    {
+                                        if (tn3 != null)
+                                            搜索结果listView.Items.Remove(tn3);
+                                    }
+                                }
+                            }
+                            line++;
+                        }
+                    }       
+                }
+            }
+        }
+        private void 聚焦列表(string 聚焦名,ListView 列表名)
+        {
+            ListViewItem foundItem = 列表名.FindItemWithText(聚焦名, true, 0);
+            if (foundItem != null)
+            {
+                列表名.TopItem = foundItem;  //定位到该项
+                foundItem.Focused=true;//没有先focus会跟前面 分区listView_SelectedIndexChanged 的代码出现产生异常
+                foundItem.Selected = true;//目前只能是聚焦没办法选中
+                /*分区listView_SelectedIndexChanged(分区listView,EventArgs.Empty);*/
+            }
+        }
+       
+        private void 搜索结果listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (搜索结果listView.SelectedItems.Count == 0) return;
+            ListView livi = (ListView)sender;
+            string type = livi.FocusedItem.Text;
+            tabControl1.SelectedIndex=0;
+            if (type.Contains("分区:"))
+            {
+                聚焦列表(livi.FocusedItem.Tag.ToString(),this.分区listView);
+            }
+            else if (type.Contains("知识库:"))
+            {
+                聚焦列表(livi.FocusedItem.Tag.ToString().Split("?".ToCharArray())[0], this.分区listView);
+                聚焦列表(livi.FocusedItem.Tag.ToString().Split("?".ToCharArray())[1], this.知识库listView);
+            }
+            else
+            {
+                聚焦列表(livi.FocusedItem.Tag.ToString().Split("?".ToCharArray())[0], this.分区listView);
+                聚焦列表(livi.FocusedItem.Tag.ToString().Split("?".ToCharArray())[1], this.知识库listView);
+                string name = livi.FocusedItem.Tag.ToString().Split("?".ToCharArray())[2];
+                pname = name;
+                OpenFromFile();
+            }
+
+
+        }
     }
 }

@@ -68,12 +68,23 @@ C:\Users\MSI\Desktop\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
 C:\Users\MSI\Desktop\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
 C:\Users\MSI\Desktop\oneRichText\obj\Debug\一个.exe
 C:\Users\MSI\Desktop\oneRichText\obj\Debug\一个.pdb
-C:\Users\Teriss\Desktop\oneRichText\bin\Debug\一个.exe.config
-C:\Users\Teriss\Desktop\oneRichText\bin\Debug\一个.exe
-C:\Users\Teriss\Desktop\oneRichText\bin\Debug\一个.pdb
-C:\Users\Teriss\Desktop\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
-C:\Users\Teriss\Desktop\oneRichText\obj\Debug\origin.Form1.resources
-C:\Users\Teriss\Desktop\oneRichText\obj\Debug\一个.Properties.Resources.resources
-C:\Users\Teriss\Desktop\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
-C:\Users\Teriss\Desktop\oneRichText\obj\Debug\一个.exe
-C:\Users\Teriss\Desktop\oneRichText\obj\Debug\一个.pdb
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\bin\Debug\一个.exe.config
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\bin\Debug\一个.exe
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\bin\Debug\一个.pdb
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\一个.exe
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\一个.pdb

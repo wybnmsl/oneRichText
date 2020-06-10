@@ -44,13 +44,7 @@
             this.文件ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.图片ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.音乐ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.编辑分区知识库button = new System.Windows.Forms.Button();
-            this.搜索button = new System.Windows.Forms.Button();
-            this.左边栏tablelayout = new System.Windows.Forms.TableLayoutPanel();
-            this.分区知识库tableLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.分区listView = new System.Windows.Forms.ListView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.复制ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.粘贴ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +52,6 @@
             this.剪切ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.知识库listView = new System.Windows.Forms.ListView();
-            this.添加分区button = new System.Windows.Forms.Button();
             this.添加知识库button = new System.Windows.Forms.Button();
             this.rtbInfo = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -87,11 +80,34 @@
             this.btnBold = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.添加分区button = new System.Windows.Forms.Button();
+            this.分区listView = new System.Windows.Forms.ListView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.搜索结果listView = new System.Windows.Forms.ListView();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.上菜单栏menuStrip.SuspendLayout();
-            this.左边栏tablelayout.SuspendLayout();
-            this.分区知识库tableLayout.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // 上菜单栏menuStrip
@@ -194,127 +210,37 @@
             // 文件ToolStripMenuItem1
             // 
             this.文件ToolStripMenuItem1.Name = "文件ToolStripMenuItem1";
-            this.文件ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.文件ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.文件ToolStripMenuItem1.Text = "文件";
             this.文件ToolStripMenuItem1.Click += new System.EventHandler(this.文件ToolStripMenuItem1_Click);
             // 
             // 图片ToolStripMenuItem
             // 
             this.图片ToolStripMenuItem.Name = "图片ToolStripMenuItem";
-            this.图片ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.图片ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.图片ToolStripMenuItem.Text = "图片";
             this.图片ToolStripMenuItem.Click += new System.EventHandler(this.图片ToolStripMenuItem_Click);
             // 
             // 音乐ToolStripMenuItem
             // 
             this.音乐ToolStripMenuItem.Name = "音乐ToolStripMenuItem";
-            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.音乐ToolStripMenuItem.Text = "音乐";
             this.音乐ToolStripMenuItem.Click += new System.EventHandler(this.音乐ToolStripMenuItem_Click);
             // 
-            // 编辑分区知识库button
-            // 
-            this.编辑分区知识库button.BackColor = System.Drawing.Color.Transparent;
-            this.编辑分区知识库button.FlatAppearance.BorderSize = 2;
-            this.编辑分区知识库button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.编辑分区知识库button.ForeColor = System.Drawing.Color.Gainsboro;
-            this.编辑分区知识库button.Image = ((System.Drawing.Image)(resources.GetObject("编辑分区知识库button.Image")));
-            this.编辑分区知识库button.Location = new System.Drawing.Point(3, 3);
-            this.编辑分区知识库button.Name = "编辑分区知识库button";
-            this.编辑分区知识库button.Size = new System.Drawing.Size(54, 54);
-            this.编辑分区知识库button.TabIndex = 1;
-            this.编辑分区知识库button.UseVisualStyleBackColor = false;
-            // 
-            // 搜索button
-            // 
-            this.搜索button.BackColor = System.Drawing.Color.Transparent;
-            this.搜索button.FlatAppearance.BorderSize = 2;
-            this.搜索button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.搜索button.ForeColor = System.Drawing.Color.Gainsboro;
-            this.搜索button.Image = ((System.Drawing.Image)(resources.GetObject("搜索button.Image")));
-            this.搜索button.Location = new System.Drawing.Point(3, 63);
-            this.搜索button.Name = "搜索button";
-            this.搜索button.Size = new System.Drawing.Size(54, 54);
-            this.搜索button.TabIndex = 2;
-            this.搜索button.UseVisualStyleBackColor = false;
-            // 
-            // 左边栏tablelayout
-            // 
-            this.左边栏tablelayout.BackColor = System.Drawing.Color.LightGray;
-            this.左边栏tablelayout.ColumnCount = 1;
-            this.左边栏tablelayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.25F));
-            this.左边栏tablelayout.Controls.Add(this.编辑分区知识库button, 0, 0);
-            this.左边栏tablelayout.Controls.Add(this.搜索button, 0, 1);
-            this.左边栏tablelayout.Dock = System.Windows.Forms.DockStyle.Left;
-            this.左边栏tablelayout.Location = new System.Drawing.Point(0, 25);
-            this.左边栏tablelayout.Name = "左边栏tablelayout";
-            this.左边栏tablelayout.RowCount = 2;
-            this.左边栏tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.左边栏tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.77975F));
-            this.左边栏tablelayout.Size = new System.Drawing.Size(61, 562);
-            this.左边栏tablelayout.TabIndex = 11;
-            this.左边栏tablelayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // 分区知识库tableLayout
-            // 
-            this.分区知识库tableLayout.BackColor = System.Drawing.Color.Silver;
-            this.分区知识库tableLayout.ColumnCount = 2;
-            this.分区知识库tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.分区知识库tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.分区知识库tableLayout.Controls.Add(this.label1, 0, 0);
-            this.分区知识库tableLayout.Controls.Add(this.label2, 1, 0);
-            this.分区知识库tableLayout.Controls.Add(this.分区listView, 0, 1);
-            this.分区知识库tableLayout.Controls.Add(this.知识库listView, 1, 1);
-            this.分区知识库tableLayout.Controls.Add(this.添加分区button, 0, 2);
-            this.分区知识库tableLayout.Controls.Add(this.添加知识库button, 1, 2);
-            this.分区知识库tableLayout.Dock = System.Windows.Forms.DockStyle.Left;
-            this.分区知识库tableLayout.Location = new System.Drawing.Point(61, 25);
-            this.分区知识库tableLayout.Name = "分区知识库tableLayout";
-            this.分区知识库tableLayout.RowCount = 3;
-            this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.861456F));
-            this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.13854F));
-            this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.分区知识库tableLayout.Size = new System.Drawing.Size(371, 562);
-            this.分区知识库tableLayout.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "分区";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(188, 0);
+            this.label2.Location = new System.Drawing.Point(166, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 30);
+            this.label2.Size = new System.Drawing.Size(170, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "知识库";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // 分区listView
-            // 
-            this.分区listView.BackColor = System.Drawing.Color.Gainsboro;
-            this.分区listView.ContextMenuStrip = this.contextMenuStrip1;
-            this.分区listView.FullRowSelect = true;
-            this.分区listView.HideSelection = false;
-            this.分区listView.Location = new System.Drawing.Point(3, 33);
-            this.分区listView.Name = "分区listView";
-            this.分区listView.Size = new System.Drawing.Size(179, 486);
-            this.分区listView.TabIndex = 2;
-            this.分区listView.UseCompatibleStateImageBehavior = false;
-            this.分区listView.SelectedIndexChanged += new System.EventHandler(this.分区listView_SelectedIndexChanged);
             // 
             // contextMenuStrip1
             // 
@@ -368,36 +294,26 @@
             // 
             this.知识库listView.BackColor = System.Drawing.Color.WhiteSmoke;
             this.知识库listView.ContextMenuStrip = this.contextMenuStrip1;
+            this.知识库listView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.知识库listView.FullRowSelect = true;
             this.知识库listView.HideSelection = false;
-            this.知识库listView.Location = new System.Drawing.Point(188, 33);
+            this.知识库listView.Location = new System.Drawing.Point(166, 35);
             this.知识库listView.Name = "知识库listView";
-            this.知识库listView.Size = new System.Drawing.Size(180, 486);
+            this.知识库listView.Size = new System.Drawing.Size(170, 441);
             this.知识库listView.TabIndex = 3;
             this.知识库listView.UseCompatibleStateImageBehavior = false;
+            this.知识库listView.View = System.Windows.Forms.View.List;
             this.知识库listView.SelectedIndexChanged += new System.EventHandler(this.知识库listView_SelectedIndexChanged);
-            // 
-            // 添加分区button
-            // 
-            this.添加分区button.BackColor = System.Drawing.Color.DimGray;
-            this.添加分区button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.添加分区button.ForeColor = System.Drawing.Color.FloralWhite;
-            this.添加分区button.Location = new System.Drawing.Point(3, 525);
-            this.添加分区button.Name = "添加分区button";
-            this.添加分区button.Size = new System.Drawing.Size(179, 34);
-            this.添加分区button.TabIndex = 4;
-            this.添加分区button.Text = "添加分区";
-            this.添加分区button.UseVisualStyleBackColor = false;
-            this.添加分区button.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // 添加知识库button
             // 
             this.添加知识库button.BackColor = System.Drawing.Color.DimGray;
-            this.添加知识库button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.添加知识库button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.添加知识库button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.添加知识库button.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.添加知识库button.Location = new System.Drawing.Point(188, 525);
+            this.添加知识库button.Location = new System.Drawing.Point(166, 482);
             this.添加知识库button.Name = "添加知识库button";
-            this.添加知识库button.Size = new System.Drawing.Size(180, 34);
+            this.添加知识库button.Size = new System.Drawing.Size(170, 37);
             this.添加知识库button.TabIndex = 5;
             this.添加知识库button.Text = "添加知识库";
             this.添加知识库button.UseVisualStyleBackColor = false;
@@ -405,21 +321,16 @@
             // 
             // rtbInfo
             // 
-            this.rtbInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbInfo.Location = new System.Drawing.Point(432, 131);
+            this.rtbInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbInfo.Location = new System.Drawing.Point(3, 112);
             this.rtbInfo.Name = "rtbInfo";
-            this.rtbInfo.Size = new System.Drawing.Size(573, 456);
+            this.rtbInfo.Size = new System.Drawing.Size(642, 447);
             this.rtbInfo.TabIndex = 0;
             this.rtbInfo.Text = "";
-            this.rtbInfo.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtbInfo_LinkClicked);
             this.rtbInfo.TextChanged += new System.EventHandler(this.rtbInfo_TextChanged);
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.btnOpen);
             this.panel1.Controls.Add(this.btnSave);
@@ -444,9 +355,10 @@
             this.panel1.Controls.Add(this.btnItalic);
             this.panel1.Controls.Add(this.btnLeft);
             this.panel1.Controls.Add(this.btnBold);
-            this.panel1.Location = new System.Drawing.Point(432, 25);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(573, 103);
+            this.panel1.Size = new System.Drawing.Size(642, 103);
             this.panel1.TabIndex = 14;
             // 
             // btnOpen
@@ -723,16 +635,211 @@
             this.openFileDialog.FileName = "openFileDialog1";
             this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
             // 
+            // 添加分区button
+            // 
+            this.添加分区button.BackColor = System.Drawing.Color.DimGray;
+            this.添加分区button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.添加分区button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.添加分区button.ForeColor = System.Drawing.Color.FloralWhite;
+            this.添加分区button.Location = new System.Drawing.Point(3, 482);
+            this.添加分区button.Name = "添加分区button";
+            this.添加分区button.Size = new System.Drawing.Size(157, 37);
+            this.添加分区button.TabIndex = 4;
+            this.添加分区button.Text = "添加分区";
+            this.添加分区button.UseVisualStyleBackColor = false;
+            this.添加分区button.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // 分区listView
+            // 
+            this.分区listView.BackColor = System.Drawing.Color.Gainsboro;
+            this.分区listView.ContextMenuStrip = this.contextMenuStrip1;
+            this.分区listView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.分区listView.FullRowSelect = true;
+            this.分区listView.HideSelection = false;
+            this.分区listView.Location = new System.Drawing.Point(3, 35);
+            this.分区listView.Name = "分区listView";
+            this.分区listView.Size = new System.Drawing.Size(157, 441);
+            this.分区listView.TabIndex = 2;
+            this.分区listView.UseCompatibleStateImageBehavior = false;
+            this.分区listView.View = System.Windows.Forms.View.List;
+            this.分区listView.SelectedIndexChanged += new System.EventHandler(this.分区listView_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "分区";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 25);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.tabControl1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel2);
+            this.splitContainer1.Size = new System.Drawing.Size(1005, 562);
+            this.splitContainer1.SplitterDistance = 353;
+            this.splitContainer1.TabIndex = 15;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(353, 562);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 30);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(345, 528);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "分区知识库";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.13896F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.86104F));
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.分区listView, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.添加分区button, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.添加知识库button, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.知识库listView, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(339, 522);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.tableLayoutPanel4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(345, 528);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "全局搜索";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.搜索结果listView, 0, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(339, 522);
+            this.tableLayoutPanel4.TabIndex = 2;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.tableLayoutPanel3.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.button1, 1, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(3);
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(333, 41);
+            this.tableLayoutPanel3.TabIndex = 1;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(6, 6);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(214, 29);
+            this.textBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(226, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 27);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "搜索";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // 搜索结果listView
+            // 
+            this.搜索结果listView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.搜索结果listView.HideSelection = false;
+            this.搜索结果listView.Location = new System.Drawing.Point(3, 50);
+            this.搜索结果listView.Name = "搜索结果listView";
+            this.搜索结果listView.Size = new System.Drawing.Size(333, 470);
+            this.搜索结果listView.TabIndex = 0;
+            this.搜索结果listView.UseCompatibleStateImageBehavior = false;
+            this.搜索结果listView.View = System.Windows.Forms.View.List;
+            this.搜索结果listView.SelectedIndexChanged += new System.EventHandler(this.搜索结果listView_SelectedIndexChanged);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.rtbInfo, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(648, 562);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1005, 587);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.rtbInfo);
-            this.Controls.Add(this.分区知识库tableLayout);
-            this.Controls.Add(this.左边栏tablelayout);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.上菜单栏menuStrip);
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -744,11 +851,21 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.上菜单栏menuStrip.ResumeLayout(false);
             this.上菜单栏menuStrip.PerformLayout();
-            this.左边栏tablelayout.ResumeLayout(false);
-            this.分区知识库tableLayout.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -770,15 +887,8 @@
         private System.Windows.Forms.ToolStripMenuItem 图片ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 音乐ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 粘贴ToolStripMenuItem;
-        private System.Windows.Forms.Button 编辑分区知识库button;
-        private System.Windows.Forms.Button 搜索button;
-        private System.Windows.Forms.TableLayoutPanel 左边栏tablelayout;
-        private System.Windows.Forms.TableLayoutPanel 分区知识库tableLayout;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView 分区listView;
         private System.Windows.Forms.ListView 知识库listView;
-        private System.Windows.Forms.Button 添加分区button;
         private System.Windows.Forms.Button 添加知识库button;
         private System.Windows.Forms.RichTextBox rtbInfo;
         private System.Windows.Forms.Panel panel1;
@@ -813,6 +923,20 @@
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 剪切ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重命名ToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView 分区listView;
+        private System.Windows.Forms.Button 添加分区button;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public  System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ListView 搜索结果listView;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
     }
 }
 
