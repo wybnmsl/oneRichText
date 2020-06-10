@@ -51,7 +51,7 @@ namespace origin
                   // 如果路径为空，重新选择
 
               }*/
-            dlg.SelectedPath = "C:\\Users\\acer\\Desktop\\txt";
+            dlg.SelectedPath = "C:\\Users\\as129\\Desktop\\txt";
             ListViewItem tn = new ListViewItem(Path.GetDirectoryName(dlg.SelectedPath));
             tn.Name = Path.GetDirectoryName(dlg.SelectedPath);
             分区LoadPath(dlg.SelectedPath, tn);
@@ -434,7 +434,7 @@ namespace origin
             OpenFromFile();
         }
 
-        //分区点击时间，显示该分区下的知识库目录
+        //分区点击状态更改事件，显示该分区下的知识库目录
         private void 分区listView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (分区listView.SelectedItems.Count == 0) return;
@@ -442,16 +442,51 @@ namespace origin
 
             string name = li.FocusedItem.Text;
             FolderBrowserDialog dlg = new FolderBrowserDialog();
-            string path = "C:\\Users\\acer\\Desktop\\txt\\" + name;
+            string path = "C:\\Users\\as129\\Desktop\\txt\\" + name;
             dlg.SelectedPath = path;          
 
             ListViewItem tn = new ListViewItem(Path.GetDirectoryName(dlg.SelectedPath));
             知识库listView.Items.Clear();
             知识库刷新LoadPath(dlg.SelectedPath, tn);
+            
         }
 
-        //知识库目录点击事件，显示该知识库文本
+        #region 分区目录点击事件备胎（鼠标单击）
+        //分区目录鼠标点击事件
+        private void 分区listView_MouseClick(object sender, MouseEventArgs e)
+        {
+           // if (分区listView.SelectedItems.Count == 0) return;
+            ListView li = (ListView)sender;
+
+            string name = li.FocusedItem.Text;
+            FolderBrowserDialog dlg = new FolderBrowserDialog();
+            string path = "C:\\Users\\as129\\Desktop\\txt\\" + name;
+            dlg.SelectedPath = path;
+
+            ListViewItem tn = new ListViewItem(Path.GetDirectoryName(dlg.SelectedPath));
+            知识库listView.Items.Clear();
+            知识库刷新LoadPath(dlg.SelectedPath, tn);
+        }
+        #endregion
+
+        //知识库目录点击状态更改事件，显示该知识库文本
         private void 知识库listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (知识库listView.SelectedItems.Count == 0) return;
+            ListView livi = (ListView)sender;
+            StringBuilder sb = new StringBuilder();
+            string name = livi.FocusedItem.Tag.ToString();
+            //   LoadText(sb,)
+            pname = name;
+            
+            OpenFromFile();
+            //LoadText(sb, name);
+            //rtbInfo.Text = sb.ToString();
+        }
+
+        #region 知识库目录点击事件备胎（鼠标单击）
+        //知识库目录点击事件
+        private void 知识库listView_MouseClick(object sender, MouseEventArgs e)
         {
             if (知识库listView.SelectedItems.Count == 0) return;
             ListView livi = (ListView)sender;
@@ -464,5 +499,29 @@ namespace origin
             //LoadText(sb, name);
             //rtbInfo.Text = sb.ToString();
         }
+
+        #endregion 知识右键菜单
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            ContextMenuStrip menu = (ContextMenuStrip)sender;
+            ListView livi = (ListView)menu.SourceControl;
+            //ToolStripItem toolStripItem = (ToolStripItem)livi.SelectedIndices;
+            ListView.SelectedIndexCollection c = livi.SelectedIndices;
+            //判断右键位置是否有item
+            if (c.Count > 0)
+            {
+                //有item就正常显示右键菜单
+            }
+            //没有item就没有反应
+            else
+                e.Cancel = true;
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ToolStripItem toolStripItem = (ToolStripItem)sender; //toolStripItem就是右键菜单选中的项
+        }
+
+
     }
 }

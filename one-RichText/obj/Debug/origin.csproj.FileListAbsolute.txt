@@ -1,0 +1,30 @@
+C:\Users\MSI\Desktop\团队项目开发\one\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\团队项目开发\one\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目开发\one\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\团队项目开发\one\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目开发\one - 副本\bin\Debug\一个.pdb
+C:\Users\acer\source\repos\one-RichText\one-RichText\bin\Debug\一个.exe.config
+C:\Users\acer\source\repos\one-RichText\one-RichText\bin\Debug\一个.exe
+C:\Users\acer\source\repos\one-RichText\one-RichText\bin\Debug\一个.pdb
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.Form1.resources
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.exe
+C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.pdb

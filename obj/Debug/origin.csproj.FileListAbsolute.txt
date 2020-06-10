@@ -28,3 +28,12 @@ C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csproj.Gen
 C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
 C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.exe
 C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.pdb
+D:\ProgrammingSoftware\Code\VS\one-RichText\bin\Debug\一个.exe.config
+D:\ProgrammingSoftware\Code\VS\one-RichText\bin\Debug\一个.exe
+D:\ProgrammingSoftware\Code\VS\one-RichText\bin\Debug\一个.pdb
+D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\origin.csprojAssemblyReference.cache
+D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\origin.Form1.resources
+D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\一个.Properties.Resources.resources
+D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\origin.csproj.GenerateResource.cache
+D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\一个.exe
+D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\一个.pdb
