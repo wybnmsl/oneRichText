@@ -1,0 +1,9 @@
+D:\MyProject\DemoCSharp\DemoRichText\bin\Debug\DemoRichText.exe.config
+D:\MyProject\DemoCSharp\DemoRichText\bin\Debug\DemoRichText.exe
+D:\MyProject\DemoCSharp\DemoRichText\bin\Debug\DemoRichText.pdb
+D:\MyProject\DemoCSharp\DemoRichText\obj\Debug\DemoRichText.csprojResolveAssemblyReference.cache
+D:\MyProject\DemoCSharp\DemoRichText\obj\Debug\DemoRichText.MainForm.resources
+D:\MyProject\DemoCSharp\DemoRichText\obj\Debug\DemoRichText.Properties.Resources.resources
+D:\MyProject\DemoCSharp\DemoRichText\obj\Debug\DemoRichText.csproj.GenerateResource.Cache
+D:\MyProject\DemoCSharp\DemoRichText\obj\Debug\DemoRichText.exe
+D:\MyProject\DemoCSharp\DemoRichText\obj\Debug\DemoRichText.pdb
