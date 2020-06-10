@@ -28,12 +28,52 @@ C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csproj.Gen
 C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
 C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.exe
 C:\Users\acer\source\repos\one-RichText\one-RichText\obj\Debug\一个.pdb
-D:\ProgrammingSoftware\Code\VS\one-RichText\bin\Debug\一个.exe.config
-D:\ProgrammingSoftware\Code\VS\one-RichText\bin\Debug\一个.exe
-D:\ProgrammingSoftware\Code\VS\one-RichText\bin\Debug\一个.pdb
-D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\origin.csprojAssemblyReference.cache
-D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\origin.Form1.resources
-D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\一个.Properties.Resources.resources
-D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\origin.csproj.GenerateResource.cache
-D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\一个.exe
-D:\ProgrammingSoftware\Code\VS\one-RichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\one-RichText(3)\one-RichText\one-RichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\new oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\new oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\new oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\new oneRichText\obj\Debug\一个.pdb
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\bin\Debug\一个.exe.config
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\bin\Debug\一个.exe
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\bin\Debug\一个.pdb
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\一个.exe
+C:\Users\acer\source\repos\new oneRichText\new oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\oneRichText\obj\Debug\一个.pdb
+C:\Users\Teriss\Desktop\oneRichText\bin\Debug\一个.exe.config
+C:\Users\Teriss\Desktop\oneRichText\bin\Debug\一个.exe
+C:\Users\Teriss\Desktop\oneRichText\bin\Debug\一个.pdb
+C:\Users\Teriss\Desktop\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\Teriss\Desktop\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\Teriss\Desktop\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\Teriss\Desktop\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\Teriss\Desktop\oneRichText\obj\Debug\一个.exe
+C:\Users\Teriss\Desktop\oneRichText\obj\Debug\一个.pdb

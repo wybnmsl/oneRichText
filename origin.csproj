@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -68,6 +69,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\BaseRichFormat.cs" />
+    <Compile Include="Model\ControlFileClass.cs" />
     <Compile Include="Model\Enum.cs" />
     <Compile Include="Model\IRichFormat.cs" />
     <Compile Include="Model\MP3Player.cs" />

@@ -53,8 +53,9 @@
             this.分区listView = new System.Windows.Forms.ListView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.复制ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.黏贴ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.粘贴ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.剪切ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重命名ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.知识库listView = new System.Windows.Forms.ListView();
             this.添加分区button = new System.Windows.Forms.Button();
@@ -104,8 +105,9 @@
             this.插入ToolStripMenuItem});
             this.上菜单栏menuStrip.Location = new System.Drawing.Point(0, 0);
             this.上菜单栏menuStrip.Name = "上菜单栏menuStrip";
+            this.上菜单栏menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.上菜单栏menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.上菜单栏menuStrip.Size = new System.Drawing.Size(1340, 28);
+            this.上菜单栏menuStrip.Size = new System.Drawing.Size(1005, 25);
             this.上菜单栏menuStrip.TabIndex = 0;
             this.上菜单栏menuStrip.Text = "menuStrip1";
             this.上菜单栏menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -120,38 +122,40 @@
             this.保存ToolStripMenuItem});
             this.文件ToolStripMenuItem.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
-            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.文件ToolStripMenuItem.Text = "文件";
-            this.文件ToolStripMenuItem.Click += new System.EventHandler(this.文件ToolStripMenuItem_Click);
             // 
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.打开ToolStripMenuItem.Text = "打开";
             // 
             // 新建ToolStripMenuItem
             // 
             this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
-            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.新建ToolStripMenuItem.Text = "新建";
+            this.新建ToolStripMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
             // 
             // 导入ToolStripMenuItem
             // 
             this.导入ToolStripMenuItem.Name = "导入ToolStripMenuItem";
-            this.导入ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.导入ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.导入ToolStripMenuItem.Text = "导入";
+            this.导入ToolStripMenuItem.Click += new System.EventHandler(this.导入ToolStripMenuItem_Click);
             // 
             // 导出ToolStripMenuItem
             // 
             this.导出ToolStripMenuItem.Name = "导出ToolStripMenuItem";
-            this.导出ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.导出ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.导出ToolStripMenuItem.Text = "导出";
+            this.导出ToolStripMenuItem.Click += new System.EventHandler(this.导出ToolStripMenuItem_Click);
             // 
             // 保存ToolStripMenuItem
             // 
             this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
-            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.保存ToolStripMenuItem.Text = "保存";
             // 
             // 开始ToolStripMenuItem
@@ -160,20 +164,20 @@
             this.粘贴ToolStripMenuItem});
             this.开始ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.开始ToolStripMenuItem.Name = "开始ToolStripMenuItem";
-            this.开始ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.开始ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.开始ToolStripMenuItem.Text = "开始";
             // 
             // 粘贴ToolStripMenuItem
             // 
             this.粘贴ToolStripMenuItem.Name = "粘贴ToolStripMenuItem";
-            this.粘贴ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.粘贴ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.粘贴ToolStripMenuItem.Text = "粘贴";
             // 
             // 编辑ToolStripMenuItem
             // 
             this.编辑ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.编辑ToolStripMenuItem.Name = "编辑ToolStripMenuItem";
-            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.编辑ToolStripMenuItem.Text = "编辑";
             // 
             // 插入ToolStripMenuItem
@@ -184,26 +188,27 @@
             this.音乐ToolStripMenuItem});
             this.插入ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.插入ToolStripMenuItem.Name = "插入ToolStripMenuItem";
-            this.插入ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.插入ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.插入ToolStripMenuItem.Text = "插入";
             // 
             // 文件ToolStripMenuItem1
             // 
             this.文件ToolStripMenuItem1.Name = "文件ToolStripMenuItem1";
-            this.文件ToolStripMenuItem1.Size = new System.Drawing.Size(122, 26);
+            this.文件ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.文件ToolStripMenuItem1.Text = "文件";
+            this.文件ToolStripMenuItem1.Click += new System.EventHandler(this.文件ToolStripMenuItem1_Click);
             // 
             // 图片ToolStripMenuItem
             // 
             this.图片ToolStripMenuItem.Name = "图片ToolStripMenuItem";
-            this.图片ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.图片ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.图片ToolStripMenuItem.Text = "图片";
             this.图片ToolStripMenuItem.Click += new System.EventHandler(this.图片ToolStripMenuItem_Click);
             // 
             // 音乐ToolStripMenuItem
             // 
             this.音乐ToolStripMenuItem.Name = "音乐ToolStripMenuItem";
-            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.音乐ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.音乐ToolStripMenuItem.Text = "音乐";
             this.音乐ToolStripMenuItem.Click += new System.EventHandler(this.音乐ToolStripMenuItem_Click);
             // 
@@ -214,10 +219,9 @@
             this.编辑分区知识库button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.编辑分区知识库button.ForeColor = System.Drawing.Color.Gainsboro;
             this.编辑分区知识库button.Image = ((System.Drawing.Image)(resources.GetObject("编辑分区知识库button.Image")));
-            this.编辑分区知识库button.Location = new System.Drawing.Point(4, 4);
-            this.编辑分区知识库button.Margin = new System.Windows.Forms.Padding(4);
+            this.编辑分区知识库button.Location = new System.Drawing.Point(3, 3);
             this.编辑分区知识库button.Name = "编辑分区知识库button";
-            this.编辑分区知识库button.Size = new System.Drawing.Size(72, 67);
+            this.编辑分区知识库button.Size = new System.Drawing.Size(54, 54);
             this.编辑分区知识库button.TabIndex = 1;
             this.编辑分区知识库button.UseVisualStyleBackColor = false;
             // 
@@ -228,10 +232,9 @@
             this.搜索button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.搜索button.ForeColor = System.Drawing.Color.Gainsboro;
             this.搜索button.Image = ((System.Drawing.Image)(resources.GetObject("搜索button.Image")));
-            this.搜索button.Location = new System.Drawing.Point(4, 79);
-            this.搜索button.Margin = new System.Windows.Forms.Padding(4);
+            this.搜索button.Location = new System.Drawing.Point(3, 63);
             this.搜索button.Name = "搜索button";
-            this.搜索button.Size = new System.Drawing.Size(72, 68);
+            this.搜索button.Size = new System.Drawing.Size(54, 54);
             this.搜索button.TabIndex = 2;
             this.搜索button.UseVisualStyleBackColor = false;
             // 
@@ -243,13 +246,12 @@
             this.左边栏tablelayout.Controls.Add(this.编辑分区知识库button, 0, 0);
             this.左边栏tablelayout.Controls.Add(this.搜索button, 0, 1);
             this.左边栏tablelayout.Dock = System.Windows.Forms.DockStyle.Left;
-            this.左边栏tablelayout.Location = new System.Drawing.Point(0, 28);
-            this.左边栏tablelayout.Margin = new System.Windows.Forms.Padding(4);
+            this.左边栏tablelayout.Location = new System.Drawing.Point(0, 25);
             this.左边栏tablelayout.Name = "左边栏tablelayout";
             this.左边栏tablelayout.RowCount = 2;
-            this.左边栏tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.左边栏tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.左边栏tablelayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.77975F));
-            this.左边栏tablelayout.Size = new System.Drawing.Size(81, 706);
+            this.左边栏tablelayout.Size = new System.Drawing.Size(61, 562);
             this.左边栏tablelayout.TabIndex = 11;
             this.左边栏tablelayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -266,14 +268,13 @@
             this.分区知识库tableLayout.Controls.Add(this.添加分区button, 0, 2);
             this.分区知识库tableLayout.Controls.Add(this.添加知识库button, 1, 2);
             this.分区知识库tableLayout.Dock = System.Windows.Forms.DockStyle.Left;
-            this.分区知识库tableLayout.Location = new System.Drawing.Point(81, 28);
-            this.分区知识库tableLayout.Margin = new System.Windows.Forms.Padding(4);
+            this.分区知识库tableLayout.Location = new System.Drawing.Point(61, 25);
             this.分区知识库tableLayout.Name = "分区知识库tableLayout";
             this.分区知识库tableLayout.RowCount = 3;
             this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.861456F));
             this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.13854F));
-            this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.分区知识库tableLayout.Size = new System.Drawing.Size(495, 706);
+            this.分区知识库tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.分区知识库tableLayout.Size = new System.Drawing.Size(371, 562);
             this.分区知识库tableLayout.TabIndex = 12;
             // 
             // label1
@@ -281,10 +282,9 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 38);
+            this.label1.Size = new System.Drawing.Size(179, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "分区";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,10 +295,9 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(251, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(188, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 38);
+            this.label2.Size = new System.Drawing.Size(179, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "知识库";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -310,10 +309,9 @@
             this.分区listView.ContextMenuStrip = this.contextMenuStrip1;
             this.分区listView.FullRowSelect = true;
             this.分区listView.HideSelection = false;
-            this.分区listView.Location = new System.Drawing.Point(4, 42);
-            this.分区listView.Margin = new System.Windows.Forms.Padding(4);
+            this.分区listView.Location = new System.Drawing.Point(3, 33);
             this.分区listView.Name = "分区listView";
-            this.分区listView.Size = new System.Drawing.Size(237, 606);
+            this.分区listView.Size = new System.Drawing.Size(179, 486);
             this.分区listView.TabIndex = 2;
             this.分区listView.UseCompatibleStateImageBehavior = false;
             this.分区listView.SelectedIndexChanged += new System.EventHandler(this.分区listView_SelectedIndexChanged);
@@ -323,39 +321,48 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.复制ToolStripMenuItem,
-            this.黏贴ToolStripMenuItem,
+            this.粘贴ToolStripMenuItem1,
             this.删除ToolStripMenuItem,
+            this.剪切ToolStripMenuItem,
             this.重命名ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(124, 100);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(113, 114);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // 复制ToolStripMenuItem
             // 
-            this.复制ToolStripMenuItem.CheckOnClick = true;
             this.复制ToolStripMenuItem.Name = "复制ToolStripMenuItem";
-            this.复制ToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
+            this.复制ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.复制ToolStripMenuItem.Text = "复制";
+            this.复制ToolStripMenuItem.Click += new System.EventHandler(this.复制ToolStripMenuItem_Click);
             // 
-            // 黏贴ToolStripMenuItem
+            // 粘贴ToolStripMenuItem1
             // 
-            this.黏贴ToolStripMenuItem.Name = "黏贴ToolStripMenuItem";
-            this.黏贴ToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
-            this.黏贴ToolStripMenuItem.Text = "黏贴";
+            this.粘贴ToolStripMenuItem1.Name = "粘贴ToolStripMenuItem1";
+            this.粘贴ToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.粘贴ToolStripMenuItem1.Text = "粘贴";
+            this.粘贴ToolStripMenuItem1.Click += new System.EventHandler(this.粘贴ToolStripMenuItem1_Click);
             // 
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // 剪切ToolStripMenuItem
+            // 
+            this.剪切ToolStripMenuItem.Name = "剪切ToolStripMenuItem";
+            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.剪切ToolStripMenuItem.Text = "剪切";
+            this.剪切ToolStripMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem_Click);
             // 
             // 重命名ToolStripMenuItem
             // 
-            this.重命名ToolStripMenuItem.CheckOnClick = true;
             this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
-            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.重命名ToolStripMenuItem.Text = "重命名";
-            this.重命名ToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.重命名ToolStripMenuItem.Click += new System.EventHandler(this.重命名ToolStripMenuItem_Click);
             // 
             // 知识库listView
             // 
@@ -363,10 +370,9 @@
             this.知识库listView.ContextMenuStrip = this.contextMenuStrip1;
             this.知识库listView.FullRowSelect = true;
             this.知识库listView.HideSelection = false;
-            this.知识库listView.Location = new System.Drawing.Point(251, 42);
-            this.知识库listView.Margin = new System.Windows.Forms.Padding(4);
+            this.知识库listView.Location = new System.Drawing.Point(188, 33);
             this.知识库listView.Name = "知识库listView";
-            this.知识库listView.Size = new System.Drawing.Size(239, 606);
+            this.知识库listView.Size = new System.Drawing.Size(180, 486);
             this.知识库listView.TabIndex = 3;
             this.知识库listView.UseCompatibleStateImageBehavior = false;
             this.知识库listView.SelectedIndexChanged += new System.EventHandler(this.知识库listView_SelectedIndexChanged);
@@ -376,10 +382,9 @@
             this.添加分区button.BackColor = System.Drawing.Color.DimGray;
             this.添加分区button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.添加分区button.ForeColor = System.Drawing.Color.FloralWhite;
-            this.添加分区button.Location = new System.Drawing.Point(4, 660);
-            this.添加分区button.Margin = new System.Windows.Forms.Padding(4);
+            this.添加分区button.Location = new System.Drawing.Point(3, 525);
             this.添加分区button.Name = "添加分区button";
-            this.添加分区button.Size = new System.Drawing.Size(239, 42);
+            this.添加分区button.Size = new System.Drawing.Size(179, 34);
             this.添加分区button.TabIndex = 4;
             this.添加分区button.Text = "添加分区";
             this.添加分区button.UseVisualStyleBackColor = false;
@@ -390,25 +395,25 @@
             this.添加知识库button.BackColor = System.Drawing.Color.DimGray;
             this.添加知识库button.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.添加知识库button.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.添加知识库button.Location = new System.Drawing.Point(251, 660);
-            this.添加知识库button.Margin = new System.Windows.Forms.Padding(4);
+            this.添加知识库button.Location = new System.Drawing.Point(188, 525);
             this.添加知识库button.Name = "添加知识库button";
-            this.添加知识库button.Size = new System.Drawing.Size(240, 42);
+            this.添加知识库button.Size = new System.Drawing.Size(180, 34);
             this.添加知识库button.TabIndex = 5;
             this.添加知识库button.Text = "添加知识库";
             this.添加知识库button.UseVisualStyleBackColor = false;
+            this.添加知识库button.Click += new System.EventHandler(this.添加知识库button_Click);
             // 
             // rtbInfo
             // 
             this.rtbInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbInfo.Location = new System.Drawing.Point(576, 164);
-            this.rtbInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.rtbInfo.Location = new System.Drawing.Point(432, 131);
             this.rtbInfo.Name = "rtbInfo";
-            this.rtbInfo.Size = new System.Drawing.Size(763, 569);
+            this.rtbInfo.Size = new System.Drawing.Size(573, 456);
             this.rtbInfo.TabIndex = 0;
             this.rtbInfo.Text = "";
+            this.rtbInfo.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.rtbInfo_LinkClicked);
             this.rtbInfo.TextChanged += new System.EventHandler(this.rtbInfo_TextChanged);
             // 
             // panel1
@@ -439,19 +444,17 @@
             this.panel1.Controls.Add(this.btnItalic);
             this.panel1.Controls.Add(this.btnLeft);
             this.panel1.Controls.Add(this.btnBold);
-            this.panel1.Location = new System.Drawing.Point(576, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(432, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(764, 129);
+            this.panel1.Size = new System.Drawing.Size(573, 103);
             this.panel1.TabIndex = 14;
             // 
             // btnOpen
             // 
             this.btnOpen.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen.Image")));
-            this.btnOpen.Location = new System.Drawing.Point(363, 56);
-            this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOpen.Location = new System.Drawing.Point(272, 45);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(33, 31);
+            this.btnOpen.Size = new System.Drawing.Size(25, 25);
             this.btnOpen.TabIndex = 23;
             this.btnOpen.Tag = "Search";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -460,10 +463,9 @@
             // btnSave
             // 
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(325, 56);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(244, 45);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(33, 31);
+            this.btnSave.Size = new System.Drawing.Size(25, 25);
             this.btnSave.TabIndex = 22;
             this.btnSave.Tag = "Search";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -494,28 +496,25 @@
             "36",
             "48",
             "72"});
-            this.combFontSize.Location = new System.Drawing.Point(208, 60);
-            this.combFontSize.Margin = new System.Windows.Forms.Padding(4);
+            this.combFontSize.Location = new System.Drawing.Point(156, 48);
             this.combFontSize.Name = "combFontSize";
-            this.combFontSize.Size = new System.Drawing.Size(95, 23);
+            this.combFontSize.Size = new System.Drawing.Size(72, 20);
             this.combFontSize.TabIndex = 21;
             this.combFontSize.Text = "字体大小";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(23, 60);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Location = new System.Drawing.Point(17, 48);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(143, 25);
+            this.txtSearch.Size = new System.Drawing.Size(108, 21);
             this.txtSearch.TabIndex = 20;
             // 
             // btnSearch
             // 
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(171, 56);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Location = new System.Drawing.Point(128, 45);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(33, 31);
+            this.btnSearch.Size = new System.Drawing.Size(25, 25);
             this.btnSearch.TabIndex = 19;
             this.btnSearch.Tag = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -524,10 +523,9 @@
             // btnDel
             // 
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
-            this.btnDel.Location = new System.Drawing.Point(661, 94);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDel.Location = new System.Drawing.Point(496, 75);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(33, 31);
+            this.btnDel.Size = new System.Drawing.Size(25, 25);
             this.btnDel.TabIndex = 0;
             this.btnDel.Tag = "Del";
             this.btnDel.UseVisualStyleBackColor = true;
@@ -536,10 +534,9 @@
             // btnUl
             // 
             this.btnUl.Image = ((System.Drawing.Image)(resources.GetObject("btnUl.Image")));
-            this.btnUl.Location = new System.Drawing.Point(437, 94);
-            this.btnUl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUl.Location = new System.Drawing.Point(328, 75);
             this.btnUl.Name = "btnUl";
-            this.btnUl.Size = new System.Drawing.Size(33, 31);
+            this.btnUl.Size = new System.Drawing.Size(25, 25);
             this.btnUl.TabIndex = 0;
             this.btnUl.Tag = "Ul";
             this.btnUl.UseVisualStyleBackColor = true;
@@ -548,10 +545,9 @@
             // btnForeColor
             // 
             this.btnForeColor.Image = ((System.Drawing.Image)(resources.GetObject("btnForeColor.Image")));
-            this.btnForeColor.Location = new System.Drawing.Point(213, 94);
-            this.btnForeColor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnForeColor.Location = new System.Drawing.Point(160, 75);
             this.btnForeColor.Name = "btnForeColor";
-            this.btnForeColor.Size = new System.Drawing.Size(33, 31);
+            this.btnForeColor.Size = new System.Drawing.Size(25, 25);
             this.btnForeColor.TabIndex = 0;
             this.btnForeColor.Tag = "ForeColor";
             this.btnForeColor.UseVisualStyleBackColor = true;
@@ -560,10 +556,9 @@
             // btnSuperScript
             // 
             this.btnSuperScript.Image = ((System.Drawing.Image)(resources.GetObject("btnSuperScript.Image")));
-            this.btnSuperScript.Location = new System.Drawing.Point(549, 94);
-            this.btnSuperScript.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSuperScript.Location = new System.Drawing.Point(412, 75);
             this.btnSuperScript.Name = "btnSuperScript";
-            this.btnSuperScript.Size = new System.Drawing.Size(33, 31);
+            this.btnSuperScript.Size = new System.Drawing.Size(25, 25);
             this.btnSuperScript.TabIndex = 0;
             this.btnSuperScript.Tag = "SuperScript";
             this.btnSuperScript.UseVisualStyleBackColor = true;
@@ -572,10 +567,9 @@
             // btnOutIdent
             // 
             this.btnOutIdent.Image = ((System.Drawing.Image)(resources.GetObject("btnOutIdent.Image")));
-            this.btnOutIdent.Location = new System.Drawing.Point(400, 94);
-            this.btnOutIdent.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOutIdent.Location = new System.Drawing.Point(300, 75);
             this.btnOutIdent.Name = "btnOutIdent";
-            this.btnOutIdent.Size = new System.Drawing.Size(33, 31);
+            this.btnOutIdent.Size = new System.Drawing.Size(25, 25);
             this.btnOutIdent.TabIndex = 0;
             this.btnOutIdent.Tag = "OutIndent";
             this.btnOutIdent.UseVisualStyleBackColor = true;
@@ -584,10 +578,9 @@
             // btnBackgroundColor
             // 
             this.btnBackgroundColor.Image = ((System.Drawing.Image)(resources.GetObject("btnBackgroundColor.Image")));
-            this.btnBackgroundColor.Location = new System.Drawing.Point(176, 94);
-            this.btnBackgroundColor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBackgroundColor.Location = new System.Drawing.Point(132, 75);
             this.btnBackgroundColor.Name = "btnBackgroundColor";
-            this.btnBackgroundColor.Size = new System.Drawing.Size(33, 31);
+            this.btnBackgroundColor.Size = new System.Drawing.Size(25, 25);
             this.btnBackgroundColor.TabIndex = 0;
             this.btnBackgroundColor.Tag = "BGColor";
             this.btnBackgroundColor.UseVisualStyleBackColor = true;
@@ -596,10 +589,9 @@
             // btnSubScript
             // 
             this.btnSubScript.Image = ((System.Drawing.Image)(resources.GetObject("btnSubScript.Image")));
-            this.btnSubScript.Location = new System.Drawing.Point(512, 94);
-            this.btnSubScript.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubScript.Location = new System.Drawing.Point(384, 75);
             this.btnSubScript.Name = "btnSubScript";
-            this.btnSubScript.Size = new System.Drawing.Size(33, 31);
+            this.btnSubScript.Size = new System.Drawing.Size(25, 25);
             this.btnSubScript.TabIndex = 0;
             this.btnSubScript.Tag = "SubScript";
             this.btnSubScript.UseVisualStyleBackColor = true;
@@ -608,10 +600,9 @@
             // btnPic
             // 
             this.btnPic.Image = ((System.Drawing.Image)(resources.GetObject("btnPic.Image")));
-            this.btnPic.Location = new System.Drawing.Point(587, 94);
-            this.btnPic.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPic.Location = new System.Drawing.Point(440, 75);
             this.btnPic.Name = "btnPic";
-            this.btnPic.Size = new System.Drawing.Size(33, 31);
+            this.btnPic.Size = new System.Drawing.Size(25, 25);
             this.btnPic.TabIndex = 0;
             this.btnPic.Tag = "Pic";
             this.btnPic.UseVisualStyleBackColor = true;
@@ -620,10 +611,9 @@
             // bntPrint
             // 
             this.bntPrint.Image = ((System.Drawing.Image)(resources.GetObject("bntPrint.Image")));
-            this.bntPrint.Location = new System.Drawing.Point(624, 94);
-            this.bntPrint.Margin = new System.Windows.Forms.Padding(4);
+            this.bntPrint.Location = new System.Drawing.Point(468, 75);
             this.bntPrint.Name = "bntPrint";
-            this.bntPrint.Size = new System.Drawing.Size(33, 31);
+            this.bntPrint.Size = new System.Drawing.Size(25, 25);
             this.bntPrint.TabIndex = 0;
             this.bntPrint.Tag = "Print";
             this.bntPrint.UseVisualStyleBackColor = true;
@@ -632,10 +622,9 @@
             // btnIdent
             // 
             this.btnIdent.Image = ((System.Drawing.Image)(resources.GetObject("btnIdent.Image")));
-            this.btnIdent.Location = new System.Drawing.Point(363, 94);
-            this.btnIdent.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIdent.Location = new System.Drawing.Point(272, 75);
             this.btnIdent.Name = "btnIdent";
-            this.btnIdent.Size = new System.Drawing.Size(33, 31);
+            this.btnIdent.Size = new System.Drawing.Size(25, 25);
             this.btnIdent.TabIndex = 0;
             this.btnIdent.Tag = "Indent";
             this.btnIdent.UseVisualStyleBackColor = true;
@@ -644,10 +633,9 @@
             // btnFont
             // 
             this.btnFont.Image = ((System.Drawing.Image)(resources.GetObject("btnFont.Image")));
-            this.btnFont.Location = new System.Drawing.Point(139, 94);
-            this.btnFont.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFont.Location = new System.Drawing.Point(104, 75);
             this.btnFont.Name = "btnFont";
-            this.btnFont.Size = new System.Drawing.Size(33, 31);
+            this.btnFont.Size = new System.Drawing.Size(25, 25);
             this.btnFont.TabIndex = 0;
             this.btnFont.Tag = "Font";
             this.btnFont.UseVisualStyleBackColor = true;
@@ -656,10 +644,9 @@
             // btnStrikeLine
             // 
             this.btnStrikeLine.Image = ((System.Drawing.Image)(resources.GetObject("btnStrikeLine.Image")));
-            this.btnStrikeLine.Location = new System.Drawing.Point(475, 94);
-            this.btnStrikeLine.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStrikeLine.Location = new System.Drawing.Point(356, 75);
             this.btnStrikeLine.Name = "btnStrikeLine";
-            this.btnStrikeLine.Size = new System.Drawing.Size(33, 31);
+            this.btnStrikeLine.Size = new System.Drawing.Size(25, 25);
             this.btnStrikeLine.TabIndex = 0;
             this.btnStrikeLine.Tag = "StrikeLine";
             this.btnStrikeLine.UseVisualStyleBackColor = true;
@@ -668,10 +655,9 @@
             // btnRight
             // 
             this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
-            this.btnRight.Location = new System.Drawing.Point(325, 94);
-            this.btnRight.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRight.Location = new System.Drawing.Point(244, 75);
             this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(33, 31);
+            this.btnRight.Size = new System.Drawing.Size(25, 25);
             this.btnRight.TabIndex = 0;
             this.btnRight.Tag = "Right";
             this.btnRight.UseVisualStyleBackColor = true;
@@ -680,10 +666,9 @@
             // btnUnderLine
             // 
             this.btnUnderLine.Image = ((System.Drawing.Image)(resources.GetObject("btnUnderLine.Image")));
-            this.btnUnderLine.Location = new System.Drawing.Point(101, 94);
-            this.btnUnderLine.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUnderLine.Location = new System.Drawing.Point(76, 75);
             this.btnUnderLine.Name = "btnUnderLine";
-            this.btnUnderLine.Size = new System.Drawing.Size(33, 31);
+            this.btnUnderLine.Size = new System.Drawing.Size(25, 25);
             this.btnUnderLine.TabIndex = 0;
             this.btnUnderLine.Tag = "UnderLine";
             this.btnUnderLine.UseVisualStyleBackColor = true;
@@ -692,10 +677,9 @@
             // btnCenter
             // 
             this.btnCenter.Image = ((System.Drawing.Image)(resources.GetObject("btnCenter.Image")));
-            this.btnCenter.Location = new System.Drawing.Point(288, 94);
-            this.btnCenter.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCenter.Location = new System.Drawing.Point(216, 75);
             this.btnCenter.Name = "btnCenter";
-            this.btnCenter.Size = new System.Drawing.Size(33, 31);
+            this.btnCenter.Size = new System.Drawing.Size(25, 25);
             this.btnCenter.TabIndex = 0;
             this.btnCenter.Tag = "Center";
             this.btnCenter.UseVisualStyleBackColor = true;
@@ -704,10 +688,9 @@
             // btnItalic
             // 
             this.btnItalic.Image = ((System.Drawing.Image)(resources.GetObject("btnItalic.Image")));
-            this.btnItalic.Location = new System.Drawing.Point(64, 94);
-            this.btnItalic.Margin = new System.Windows.Forms.Padding(4);
+            this.btnItalic.Location = new System.Drawing.Point(48, 75);
             this.btnItalic.Name = "btnItalic";
-            this.btnItalic.Size = new System.Drawing.Size(33, 31);
+            this.btnItalic.Size = new System.Drawing.Size(25, 25);
             this.btnItalic.TabIndex = 0;
             this.btnItalic.Tag = "Italic";
             this.btnItalic.UseVisualStyleBackColor = true;
@@ -716,10 +699,9 @@
             // btnLeft
             // 
             this.btnLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.Image")));
-            this.btnLeft.Location = new System.Drawing.Point(251, 94);
-            this.btnLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLeft.Location = new System.Drawing.Point(188, 75);
             this.btnLeft.Name = "btnLeft";
-            this.btnLeft.Size = new System.Drawing.Size(33, 31);
+            this.btnLeft.Size = new System.Drawing.Size(25, 25);
             this.btnLeft.TabIndex = 0;
             this.btnLeft.Tag = "Left";
             this.btnLeft.UseVisualStyleBackColor = true;
@@ -728,10 +710,9 @@
             // btnBold
             // 
             this.btnBold.Image = ((System.Drawing.Image)(resources.GetObject("btnBold.Image")));
-            this.btnBold.Location = new System.Drawing.Point(23, 94);
-            this.btnBold.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBold.Location = new System.Drawing.Point(17, 75);
             this.btnBold.Name = "btnBold";
-            this.btnBold.Size = new System.Drawing.Size(33, 31);
+            this.btnBold.Size = new System.Drawing.Size(25, 25);
             this.btnBold.TabIndex = 0;
             this.btnBold.Tag = "Bold";
             this.btnBold.UseVisualStyleBackColor = true;
@@ -744,10 +725,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1340, 734);
+            this.ClientSize = new System.Drawing.Size(1005, 587);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rtbInfo);
             this.Controls.Add(this.分区知识库tableLayout);
@@ -756,7 +737,6 @@
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.上菜单栏menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.RightToLeftLayout = true;
             this.ShowIcon = false;
@@ -829,8 +809,9 @@
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 复制ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 黏贴ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 粘贴ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 剪切ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重命名ToolStripMenuItem;
     }
 }
