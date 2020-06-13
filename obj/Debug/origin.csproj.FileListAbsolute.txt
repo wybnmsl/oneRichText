@@ -88,3 +88,13 @@ C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\origin.csproj.Generate
 C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
 C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\一个.exe
 C:\Users\MSI\Desktop\oneRichText(1)\oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText(1)\oneRichText\obj\Debug\一个.pdb

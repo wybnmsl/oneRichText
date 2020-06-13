@@ -1,0 +1,129 @@
+作业：
+人工智能，算法；ddl，不详
+
+高英：写一篇东西；ddl，这周
+
+编译原理：慕课；ddl，这周
+
+团队开发：这周以及上周的解决冲突。
+
+周二早上，做高英
+
+周三早上，人工智能
+
+周三下午，写一下团队开发
+
+周三晚上，微信小程序写报告
+
+周四早上，做高英笔记
+
+周四下午，再学一下团队开发
+
+周四晚上，待定
+
+stmt-sequence -> stmt ; stmt-sequence | stmt ;
+
+stmt -> s
+
+stmt-sequence => stmt ; stmt-sequence
+
+                         => stmt ; stmt ;
+
+                         => stmt ; s ;
+
+                         => s ; s ;
+
+stmt-sequence => stmt ; stmt-sequence
+
+                         => s ; stmt-sequence
+
+                         => s ; stmt ;
+
+                         => s ; s ;
+
+
+最左推导：lexp-seq => lexp
+
+                                 => list
+
+                                 => ( lexp-seq )
+
+                                 => ( lexp-seq lexp )
+
+                                 => ( lexp-seq lexp lexp )
+
+                                 => ( lexp lexp lexp )
+
+                                 => ( atom lexp lexp )
+
+                                 => ( number lexp  lexp )
+
+                                 => ( number atom lexp )
+
+                                 => ( number identifier lexp )
+
+                                 => ( number identifier list )
+
+                                 => ( number identifier ( lexp-seq ) )
+
+                                 => ( number identifier ( lexp-seq lexp ) )
+
+                                 => ( number identifier ( lexp-seq lexp lexp ) )
+
+                                 => ( number identifier ( lexp lexp lexp ) )
+
+                                 => ( number identifier ( atom lexp lexp ) )
+
+                                 => ( number identifier ( indentifier lexp lexp ) )
+
+                                 => ( number identifier ( indentifier atom lexp ) )
+
+                                 => ( number identifier ( indentifier indentifier lexp ) )
+
+                                 => ( number identifier ( indentifier indentifier atom ) )
+
+                                 => ( number identifier ( indentifier indentifier indentifier ) )
+
+最右推导：lexp-seq => lexp
+
+                                 => list
+
+                                 => ( lexp-seq )
+
+                                 => ( lexp-seq lexp )
+
+                                 => ( lexp-seq  list )
+
+                                 => ( lexp-seq ( lexp-seq ) )
+
+                                 => ( lexp-seq ( lexp-seq lexp ) )
+
+                                 => ( lexp-seq ( lexp-seq atom ) )
+
+                                  => ( lexp-seq ( lexp-seq indentifier ) )
+
+                                  => ( lexp-seq ( lexp-seq lexp indentifier ) )
+
+                                  => ( lexp-seq ( lexp-seq atom indentifier ) )
+
+                                  => ( lexp-seq ( lexp-seq indentifier indentifier ) )
+
+                                  => ( lexp-seq ( lexp indentifier indentifier ) )
+
+                                  => ( lexp-seq ( indentifier indentifier indentifier ) )
+
+                                  => ( lexp-seq lexp ( indentifier indentifier indentifier ) )
+
+                                  => ( lexp-seq lexp ( indentifier indentifier indentifier ) )
+
+                                  => ( lexp-seq atom ( indentifier indentifier indentifier ) )
+
+                                  => ( lexp-seq number ( indentifier indentifier indentifier ) )
+
+                                  => ( lexp number ( indentifier indentifier indentifier ) )
+
+                                  => ( atom number ( indentifier indentifier indentifier ) )
+
+                                  => ( indentifier number ( indentifier indentifier indentifier ) )
+
+?

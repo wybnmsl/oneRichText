@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using origin.Model;
 using Microsoft.VisualBasic;
+using System.Collections;
 
 namespace origin
 {
@@ -759,13 +760,28 @@ namespace origin
                     return ;
                 }
                 Directory.SetCurrentDirectory(rootpath + @"\" + "txt");
+                if (ControlFileClass.GetFileName(menupath) == str )//判断重命名是否和原名字相同
+                {
+                    MessageBox.Show("文件夹名不能相同，请重新输入");
+                    return;
+                }
+                ControlFileClass test = new ControlFileClass(rootpath + @"\" + "txt", false);
+                ArrayList x = test.FileListName;
+                foreach(String temp in x)
+                {
+                    if(temp == str)//判断重命名是否与其他文件夹重名
+                    {
+                        MessageBox.Show("已存在目标名文件夹，请重新输入");
+                        return;
+                    }
+                }
                 Directory.Move(ControlFileClass.GetFileName(menupath), str);//使用filename但是get的是folder
                 Directory.SetCurrentDirectory(rootpath);
                 分区刷新(rootpath + @"\" + "txt"); ;
             }
             else
             {
-                string str = Interaction.InputBox("请输入目标的名字", "重命名文件", "在这里输入,请注意需要同时输入后缀名", -1, -1);
+                string str = Interaction.InputBox("请输入目标的名字", "重命名文件", "在这里输入文件名,自动添加后缀", -1, -1);
                 if (str.Length == 0)
                 {
                     MessageBox.Show("没有输入,无效操作");
@@ -774,7 +790,22 @@ namespace origin
                 string filename = ControlFileClass.GetFileName(menupath);
                 string foldername = ControlFileClass.GetFileName(ControlFileClass.GetFolderPath(menupath));
                 Directory.SetCurrentDirectory(rootpath + @"\" + "txt" + @"\" + foldername);
-                Directory.Move(filename, str);//使用filename但是get的是folder
+                if(filename == str + ".txt")//判断重命名是否和原名字相同
+                {
+                    MessageBox.Show("文件名不能相同，请重新输入");
+                    return;
+                }
+                ControlFileClass test = new ControlFileClass(rootpath + @"\" + "txt" + @"\" + foldername, false);
+                ArrayList x = test.FileListName;
+                foreach (String temp in x)
+                {
+                    if (temp == str + ".txt")//判断重命名是否与其他文件重名
+                    {
+                        MessageBox.Show("已存在目标名文件，请重新输入");
+                        return;
+                    }
+                }
+                Directory.Move(filename, str + ".txt");//使用filename但是get的是folder
                 Directory.SetCurrentDirectory(rootpath);
                 知识库刷新(fenquname);
             }
