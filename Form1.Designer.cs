@@ -82,7 +82,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.搜索结果listView = new System.Windows.Forms.ListView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.导出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -120,44 +119,43 @@
             this.粘贴ToolStripMenuItem1,
             this.删除ToolStripMenuItem,
             this.剪切ToolStripMenuItem,
-            this.重命名ToolStripMenuItem,
-            this.导出ToolStripMenuItem});
+            this.重命名ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 158);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(113, 114);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // 复制ToolStripMenuItem
             // 
             this.复制ToolStripMenuItem.Name = "复制ToolStripMenuItem";
-            this.复制ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.复制ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.复制ToolStripMenuItem.Text = "复制";
             this.复制ToolStripMenuItem.Click += new System.EventHandler(this.复制ToolStripMenuItem_Click);
             // 
             // 粘贴ToolStripMenuItem1
             // 
             this.粘贴ToolStripMenuItem1.Name = "粘贴ToolStripMenuItem1";
-            this.粘贴ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.粘贴ToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.粘贴ToolStripMenuItem1.Text = "粘贴";
             this.粘贴ToolStripMenuItem1.Click += new System.EventHandler(this.粘贴ToolStripMenuItem1_Click);
             // 
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // 剪切ToolStripMenuItem
             // 
             this.剪切ToolStripMenuItem.Name = "剪切ToolStripMenuItem";
-            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.剪切ToolStripMenuItem.Text = "剪切";
             this.剪切ToolStripMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem_Click);
             // 
             // 重命名ToolStripMenuItem
             // 
             this.重命名ToolStripMenuItem.Name = "重命名ToolStripMenuItem";
-            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.重命名ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.重命名ToolStripMenuItem.Text = "重命名";
             this.重命名ToolStripMenuItem.Click += new System.EventHandler(this.重命名ToolStripMenuItem_Click);
             // 
@@ -642,7 +640,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(345, 553);
+            this.tabPage2.Size = new System.Drawing.Size(345, 528);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "全局搜索";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -659,7 +657,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(339, 547);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(339, 522);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -707,7 +705,7 @@
             this.搜索结果listView.HideSelection = false;
             this.搜索结果listView.Location = new System.Drawing.Point(3, 50);
             this.搜索结果listView.Name = "搜索结果listView";
-            this.搜索结果listView.Size = new System.Drawing.Size(333, 494);
+            this.搜索结果listView.Size = new System.Drawing.Size(333, 470);
             this.搜索结果listView.TabIndex = 0;
             this.搜索结果listView.UseCompatibleStateImageBehavior = false;
             this.搜索结果listView.View = System.Windows.Forms.View.List;
@@ -727,13 +725,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(648, 587);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // 导出ToolStripMenuItem
-            // 
-            this.导出ToolStripMenuItem.Name = "导出ToolStripMenuItem";
-            this.导出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.导出ToolStripMenuItem.Text = "导出";
-            this.导出ToolStripMenuItem.Click += new System.EventHandler(this.导出ToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -821,7 +812,6 @@
         private System.Windows.Forms.Button btnMusic;
         private System.Windows.Forms.Button btnPicture;
         private System.Windows.Forms.Button btnFile;
-        private System.Windows.Forms.ToolStripMenuItem 导出ToolStripMenuItem;
     }
 }
 

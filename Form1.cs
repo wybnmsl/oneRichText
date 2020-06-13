@@ -709,15 +709,15 @@ namespace origin
             else
             {
                 string filename = ControlFileClass.GetFileName(originpath);
-                string temppath = ControlFileClass.GetFolderPath(originpath);
+                originpath = ControlFileClass.GetFolderPath(originpath);
                 if (COM == 1)
                 {
-                    ControlFileClass.CopyFile(temppath, menupath, filename);
+                    ControlFileClass.CopyFile(originpath, menupath, filename);
                     COM = 0;
                 }
                 else if (COM == 2)
                 {
-                    ControlFileClass.MoveFile(temppath, menupath, filename);
+                    ControlFileClass.MoveFile(originpath, menupath, filename);
                     COM = 0;
                 }
                 else
@@ -805,38 +805,11 @@ namespace origin
                         return;
                     }
                 }
-                File.Move(filename, str + ".txt");//使用filename但是get的是folder
+                Directory.Move(filename, str + ".txt");//使用filename但是get的是folder
                 Directory.SetCurrentDirectory(rootpath);
                 知识库刷新(fenquname);
             }
             
-        }
-
-        private void 导出ToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            FolderBrowserDialog dialog = new FolderBrowserDialog();
-            dialog.Description = "请选择文件路径";
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                string foldPath = dialog.SelectedPath;
-                //MessageBox.Show("已选择文件夹:" + foldPath, "选择文件夹提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if (ControlFileClass.IsFolder(menupath))
-                {
-                    string filename = ControlFileClass.GetFileName(menupath);
-                    ControlFileClass.CopyFolder(menupath, foldPath, filename);
-                    MessageBox.Show("知识库导出成功");
-                }
-                else
-                {
-                    string filename = ControlFileClass.GetFileName(menupath);
-                    string temppath = ControlFileClass.GetFolderPath(menupath);
-                    ControlFileClass.CopyFile(temppath, foldPath, filename);
-                    MessageBox.Show("知识导出成功");
-                }
-                
-            }
-            
-
         }
 
         #endregion
@@ -1006,7 +979,5 @@ namespace origin
             }
         }
         #endregion
-
-       
     }
 }
