@@ -709,15 +709,15 @@ namespace origin
             else
             {
                 string filename = ControlFileClass.GetFileName(originpath);
-                originpath = ControlFileClass.GetFolderPath(originpath);
+                string temppath = ControlFileClass.GetFolderPath(originpath);
                 if (COM == 1)
                 {
-                    ControlFileClass.CopyFile(originpath, menupath, filename);
+                    ControlFileClass.CopyFile(temppath, menupath, filename);
                     COM = 0;
                 }
                 else if (COM == 2)
                 {
-                    ControlFileClass.MoveFile(originpath, menupath, filename);
+                    ControlFileClass.MoveFile(temppath, menupath, filename);
                     COM = 0;
                 }
                 else
@@ -805,11 +805,38 @@ namespace origin
                         return;
                     }
                 }
-                Directory.Move(filename, str + ".txt");//使用filename但是get的是folder
+                File.Move(filename, str + ".txt");//使用filename但是get的是folder
                 Directory.SetCurrentDirectory(rootpath);
                 知识库刷新(fenquname);
             }
             
+        }
+
+        private void 导出ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            dialog.Description = "请选择文件路径";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string foldPath = dialog.SelectedPath;
+                //MessageBox.Show("已选择文件夹:" + foldPath, "选择文件夹提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (ControlFileClass.IsFolder(menupath))
+                {
+                    string filename = ControlFileClass.GetFileName(menupath);
+                    ControlFileClass.CopyFolder(menupath, foldPath, filename);
+                    MessageBox.Show("知识库导出成功");
+                }
+                else
+                {
+                    string filename = ControlFileClass.GetFileName(menupath);
+                    string temppath = ControlFileClass.GetFolderPath(menupath);
+                    ControlFileClass.CopyFile(temppath, foldPath, filename);
+                    MessageBox.Show("知识导出成功");
+                }
+                
+            }
+            
+
         }
 
         #endregion
@@ -943,5 +970,43 @@ namespace origin
 
 
         }
+
+        #region 王荣正重构插入多媒体
+        private void btnPicture_Click(object sender, EventArgs e)
+        {
+            PicRichFomat richFomat = new PicRichFomat();
+            richFomat.SetFormat(this.rtbInfo);
+        }
+
+        private void btnFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            o.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            o.Title = "请选择文件";
+            o.Filter = "文件|*.*";
+            if (o.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = "<文件：http://File-" + o.FileName + " >\n";
+                rtbInfo.AppendText(fileName);
+                //this.rtbInfo.Controls.Add(CreateSoundPic(fileName));
+            }
+        }
+
+        private void btnMusic_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+            o.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            o.Title = "请选择音乐";
+            o.Filter = "音频文件(&.mp3)|*.mp3";
+            if (o.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = "<音乐：http://Music-" + o.FileName + " >\n";
+                rtbInfo.AppendText(fileName);
+                //this.rtbInfo.Controls.Add(CreateSoundPic(fileName));
+            }
+        }
+        #endregion
+
+       
     }
 }

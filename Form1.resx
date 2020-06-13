@@ -121,6 +121,30 @@
     <value>456, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIlJREFUOE/N
+        0bEKgmAUhuH/UppbvYGamxVbInDRxcVJUPBOupT2bqJLyfcsHyQnk7PUC88g+H/4Y/qbzrjhvpBjUxNe
+        Dhs9OPZ469PAmgzKVgdHjw4talS4oISdUfawvP83Rygb8D5zzQkqMlBARQauUJGBBioyYH9HRQZGqB0e
+        8F70PGFnfl5KM/pHfyJBOcgwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnMusic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOE9j
+        GAigA6VJAg5A3AfEt4H4PxDvB2KCwBOIJwExTBMyJsoAdE3ImCIDTgAxyQaANNUDsTkQg8KDaANCIEwU
+        QJIB2ABZBmgBcTEQFwAxWQYcA2IQH4ZxGpAAxGuBuByIkQ1YBcTIBjQAMQYAJRpkRSCMDIyBGOR8BTAP
+        CwCZiqwZZCvJAGQ6yBaQbfQADAwAm008GVybTPoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAKRJREFUOE/d
+        zLENwjAUhGEPQElBwRBILECAARiBBZCoqNkgJaJiFFpEAyUdAzAE+Q+9WLbBQabkpE+xnffOBZkU8hni
+        +YMTXlGbHvSdYh6YGb1XRnNLtDtRwQh3HNCVcCe6HO3sf2aSLdja+YIBcskWdGWMPa54oKhgBc2kooK1
+        Lkn62CFdbEUFUtt9gQ1uCBdSbwWl/qVAOePTwDc+PaitBHGuAUCAkg57PKDaAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIBJREFUOE/N
@@ -348,9 +372,6 @@
   </metadata>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>315, 17</value>
-  </metadata>
-  <metadata name="上菜单栏menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>50</value>
