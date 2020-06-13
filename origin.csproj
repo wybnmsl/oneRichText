@@ -72,6 +72,7 @@
     <Compile Include="Model\ControlFileClass.cs" />
     <Compile Include="Model\Enum.cs" />
     <Compile Include="Model\IRichFormat.cs" />
+    <Compile Include="Model\Logger.cs" />
     <Compile Include="Model\MP3Player.cs" />
     <Compile Include="Model\PicRichFomat.cs" />
     <Compile Include="Model\RichFormatFactory.cs" />

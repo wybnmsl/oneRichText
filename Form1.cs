@@ -11,10 +11,12 @@ using System.IO;
 using origin.Model;
 using Microsoft.VisualBasic;
 using System.Collections;
+using origin.Properties;
+using 一个.Model;
 
 namespace origin
 {
-    
+
     public partial class Form1 : Form
     {
         //用作存储打开文本的路径
@@ -25,6 +27,8 @@ namespace origin
         public static string rootpath;
         //储存右键菜单栏的位置 wrz
         public static string menupath;
+        //日志类
+        public Logger log;
 
         #region 覃宇
         int pointY = -25;
@@ -43,6 +47,9 @@ namespace origin
         private void Form1_Load(object sender, EventArgs e)
         {
             分区InitListView(this.分区listView);
+            toolTip1.InitialDelay = 100;
+            log = Logger.GetLogger();
+            log.Info("启动程序");
         }
 
         #region 黄启东
@@ -51,8 +58,8 @@ namespace origin
         {
             //打开指定文件位置
             FolderBrowserDialog dlg = new FolderBrowserDialog();
-            
-            dlg.SelectedPath = rootpath+ @"\"+ "txt" ;
+
+            dlg.SelectedPath = rootpath + @"\" + "txt";
             ListViewItem tn = new ListViewItem(Path.GetDirectoryName(dlg.SelectedPath));
             tn.Name = Path.GetDirectoryName(dlg.SelectedPath);
             分区LoadPath(dlg.SelectedPath, tn);
@@ -157,7 +164,7 @@ namespace origin
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }       
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -181,12 +188,12 @@ namespace origin
         {
             FolderBrowserDialog folder = new FolderBrowserDialog();
 
-            folder.SelectedPath= rootpath + @"\" + "txt";
+            folder.SelectedPath = rootpath + @"\" + "txt";
             //Directory.CreateDirectory(folder.SelectedPath);
             DirectoryInfo dir = new DirectoryInfo(folder.SelectedPath);
-            int Itemnumber=分区listView.Items.Count+1;
-            dir.CreateSubdirectory("新分区"+Itemnumber);
-                      
+            int Itemnumber = 分区listView.Items.Count + 1;
+            dir.CreateSubdirectory("新分区" + Itemnumber);
+
             分区刷新(folder.SelectedPath);
         }
 
@@ -218,7 +225,7 @@ namespace origin
                 ListViewItem tn2 = new ListViewItem(Path.GetFileName(txt.FullName));
                 tn2.Tag = txt.FullName;
                 知识库listView.Items.Add(tn2);
-               
+
             }
         }
 
@@ -255,10 +262,11 @@ namespace origin
 
             foreach (var txt in di.GetFiles("*.txt", SearchOption.TopDirectoryOnly))
             {
-                ListViewItem tn2 = new ListViewItem(Path.GetFileName(txt.FullName));
+                ListViewItem tn2 = new ListViewItem(Path.GetFileNameWithoutExtension(txt.FullName));
                 try
-                {                    
+                {
                     tn2.Tag = txt.FullName;
+                    // tn2.Font = "宋体";
                     知识库listView.Items.Add(tn2);
                 }
                 catch
@@ -269,7 +277,7 @@ namespace origin
                 Application.DoEvents();
 
             }
-        }       
+        }
 
         private void 知识库刷新(string p)
         {
@@ -278,7 +286,7 @@ namespace origin
 
             foreach (var txt in di.GetFiles("*.txt", SearchOption.TopDirectoryOnly))
             {
-                ListViewItem tn2 = new ListViewItem(Path.GetFileName(txt.FullName));
+                ListViewItem tn2 = new ListViewItem(Path.GetFileNameWithoutExtension(txt.FullName));
                 try
                 {
                     tn2.Tag = txt.FullName;
@@ -325,7 +333,7 @@ namespace origin
             }
         }
 
-       
+
         private void 音乐ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog o = new OpenFileDialog();
@@ -361,52 +369,55 @@ namespace origin
             }
             if (e.LinkText.LastIndexOf("File-") != -1)
             {
-                System.Diagnostics.Process.Start(e.LinkText.Substring(e.LinkText.LastIndexOf("File-") + 5));
+                String path = e.LinkText.Substring(e.LinkText.LastIndexOf("File-") + 5);
+                System.Diagnostics.Process.Start(path);
+                log.Info("打开文件：" + path);
                 return;
             }
             System.Diagnostics.Process.Start(e.LinkText);
+            log.Info("打开链接：" + e.LinkText);
 
 
         }
         #endregion
 
-  /*      #region 覃宇CreateSoundPic
-        private PictureBox CreateSoundPic(string mediaPath)
-        {
-            pointY += 25;
-            PictureBox picBox = new PictureBox();
-            picBox.Location = new Point(this.rtbInfo.Location.X + 10, this.rtbInfo.Location.Y + pointY);
-            picBox.Image = Image.FromFile(Application.StartupPath + "\\Images\\sound.png");
-            picBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            //picBox.Width = 20;
-            //picBox.Height = 20;
-            picBox.Tag = mediaPath;
-            picBox.Cursor = Cursors.Hand;
-            picBox.Parent = this.rtbInfo;
-            picBox.Click += new EventHandler(picBox_Click);
-            return picBox;
-        }
-        #endregion
-    */
+        /*      #region 覃宇CreateSoundPic
+              private PictureBox CreateSoundPic(string mediaPath)
+              {
+                  pointY += 25;
+                  PictureBox picBox = new PictureBox();
+                  picBox.Location = new Point(this.rtbInfo.Location.X + 10, this.rtbInfo.Location.Y + pointY);
+                  picBox.Image = Image.FromFile(Application.StartupPath + "\\Images\\sound.png");
+                  picBox.SizeMode = PictureBoxSizeMode.AutoSize;
+                  //picBox.Width = 20;
+                  //picBox.Height = 20;
+                  picBox.Tag = mediaPath;
+                  picBox.Cursor = Cursors.Hand;
+                  picBox.Parent = this.rtbInfo;
+                  picBox.Click += new EventHandler(picBox_Click);
+                  return picBox;
+              }
+              #endregion
+          */
 
         #region 覃宇picBox_Click
-  /*      private void picBox_Click(object sender, EventArgs e)
-        {
-            PictureBox pic = sender as PictureBox;
+        /*      private void picBox_Click(object sender, EventArgs e)
+              {
+                  PictureBox pic = sender as PictureBox;
 
-            MP3Player mp3 = new MP3Player();
-            mp3.filepath = pic.Tag.ToString();
-            if (musicplay == 0)
-            {
-                mp3.Play();
-                musicplay = 1;
-            }
-            else
-            {
-                mp3.Stop();
-                musicplay = 0;
-            }
-        }*/
+                  MP3Player mp3 = new MP3Player();
+                  mp3.filepath = pic.Tag.ToString();
+                  if (musicplay == 0)
+                  {
+                      mp3.Play();
+                      musicplay = 1;
+                  }
+                  else
+                  {
+                      mp3.Stop();
+                      musicplay = 0;
+                  }
+              }*/
         #endregion
 
         public void btnButtonClick(object sender, EventArgs e)
@@ -447,7 +458,7 @@ namespace origin
             }
         }
 
-       
+
         private void rtbInfo_TextChanged(object sender, EventArgs e)
         {
 
@@ -469,7 +480,7 @@ namespace origin
             //fileName = saveFileDialog.FileName;
             //bFileNamed = true;
             this.Text = saveFileDialog.FileName + " ";
-           
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -491,7 +502,7 @@ namespace origin
             rtbInfo.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
             //rtbInfo.MdiParent = this;
             rtbInfo.Show();
-          
+
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -504,22 +515,22 @@ namespace origin
         {
             if (分区listView.SelectedItems.Count == 0) return;
             ListView li = (ListView)sender;
-          
+
             string name = li.FocusedItem.Text;
             fenquname = li.FocusedItem.Tag.ToString();
             FolderBrowserDialog dlg = new FolderBrowserDialog();
             string path = rootpath + @"\" + "txt" + @"\" + name;
-            dlg.SelectedPath = path;          
+            dlg.SelectedPath = path;
 
             知识库刷新(dlg.SelectedPath);
-            
+
         }
 
         #region 分区目录点击事件备胎（鼠标单击）
         //分区目录鼠标点击事件
         private void 分区listView_MouseClick(object sender, MouseEventArgs e)
         {
-           // if (分区listView.SelectedItems.Count == 0) return;
+            // if (分区listView.SelectedItems.Count == 0) return;
             ListView li = (ListView)sender;
 
             string name = li.FocusedItem.Text;
@@ -542,7 +553,7 @@ namespace origin
             string name = livi.FocusedItem.Tag.ToString();
             //   LoadText(sb,)
             pname = name;
-            
+
             OpenFromFile();
             //LoadText(sb, name);
             //rtbInfo.Text = sb.ToString();
@@ -565,25 +576,27 @@ namespace origin
         }
         #endregion
 
+        #region 导入导出功能
         private void 导入ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             Stream myStream = null;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter= "txt格式（*.txt）|*.txt|所有文件|*.*";
-            openFileDialog1.RestoreDirectory = true;           
-
+            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.Filter = "txt格式（*.txt）|*.txt|所有文件|*.*";
+            openFileDialog1.RestoreDirectory = true;
+            openFileDialog1.FilterIndex = 1;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string fsname = System.IO.Path.GetFileName(openFileDialog1.FileName);
                 FileStream fs = new FileStream(fenquname + "\\" + fsname, FileMode.Create, FileAccess.Write);
-                StreamWriter sw = new StreamWriter(fs);
+                StreamWriter sw = new StreamWriter(fs, Encoding.GetEncoding("gb2312"));
 
                 rtbInfo.Clear();
                 try
                 {
                     if ((myStream = openFileDialog1.OpenFile()) != null)
-                    {                                                
+                    {
                         StreamReader st = new StreamReader(openFileDialog1.FileName, Encoding.GetEncoding("gb2312"));
                         string str = st.ReadLine();
                         while (str != null)
@@ -604,7 +617,7 @@ namespace origin
                 fs.Close();
             }
             知识库刷新(fenquname);
-                          
+
         }
 
         private void 导出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -612,24 +625,25 @@ namespace origin
             saveFileDialog.InitialDirectory = pname;//设置保存的默认目录           
             saveFileDialog.Filter = "txt files(*.txt)|*.txt|all files(*.*)|*.*";
             saveFileDialog.FilterIndex = 1;//默认显示保存类型为TXT
-            saveFileDialog.RestoreDirectory = true;           
+            saveFileDialog.RestoreDirectory = true;
             //fileName = saveFileDialog.FileName;
             //bFileNamed = true;           
 
-               saveFileDialog.InitialDirectory = "D:\\";//设置保存的默认目录
-               saveFileDialog.Filter = "txt files(*.txt)|*.txt|all files(*.*)|*.*";
-               saveFileDialog.FilterIndex = 1;//默认显示保存类型为TXT
-               saveFileDialog.RestoreDirectory = true;
-               if (saveFileDialog.ShowDialog() == DialogResult.OK)
-               {
-                   rtbInfo.SaveFile(saveFileDialog.FileName, RichTextBoxStreamType.PlainText);
-                   //fileName = saveFileDialog.FileName;
-                   //bFileNamed = true;
-                   this.Text = saveFileDialog.FileName + " ";
-               }
-               
+            saveFileDialog.InitialDirectory = "D:\\";//设置保存的默认目录
+            saveFileDialog.Filter = "txt files(*.txt)|*.txt|all files(*.*)|*.*";
+            saveFileDialog.FilterIndex = 1;//默认显示保存类型为TXT
+            saveFileDialog.RestoreDirectory = true;
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                rtbInfo.SaveFile(saveFileDialog.FileName, RichTextBoxStreamType.PlainText);
+                //fileName = saveFileDialog.FileName;
+                //bFileNamed = true;
+                this.Text = saveFileDialog.FileName + " ";
+            }
+
         }
 
+        #endregion
         private void 新建ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -642,7 +656,7 @@ namespace origin
             string txtname = fenquname + "\\新知识库" + Itemnumber + ".txt";
             FileStream fs = new FileStream(txtname, FileMode.Create, FileAccess.Write);
             //File.Create(txtname);
-            fs.Close();      
+            fs.Close();
             知识库刷新(fenquname);
         }
 
@@ -669,7 +683,7 @@ namespace origin
         #region 王荣正 右键菜单栏中所有功能
 
         public string originpath;
-        public int COM = 0; 
+        public int COM = 0;
         private void 复制ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             originpath = menupath;
@@ -709,46 +723,46 @@ namespace origin
             else
             {
                 string filename = ControlFileClass.GetFileName(originpath);
-                originpath = ControlFileClass.GetFolderPath(originpath);
+                string temppath = ControlFileClass.GetFolderPath(originpath);
                 if (COM == 1)
                 {
-                    ControlFileClass.CopyFile(originpath, menupath, filename);
+                    ControlFileClass.CopyFile(temppath, menupath, filename);
                     COM = 0;
                 }
                 else if (COM == 2)
                 {
-                    ControlFileClass.MoveFile(originpath, menupath, filename);
+                    ControlFileClass.MoveFile(temppath, menupath, filename);
                     COM = 0;
                 }
                 else
                 {
                     MessageBox.Show("剪切板中没有任何文件");
                 }
-                
+
             }
             知识库刷新(fenquname);
         }
 
         private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-               if (ControlFileClass.IsFolder(menupath))
-                {
-                    ControlFileClass.DeleteFolder(menupath);
-                    分区刷新(rootpath + @"\" + "txt"); ;
-                    MessageBox.Show("文件夹删除成功");
-                }
-                else
-                {
+            if (ControlFileClass.IsFolder(menupath))
+            {
+                ControlFileClass.DeleteFolder(menupath);
+                分区刷新(rootpath + @"\" + "txt"); ;
+                MessageBox.Show("文件夹删除成功");
+            }
+            else
+            {
                 if (File.Exists(menupath))
-                {                                        
-                        File.Delete(menupath);
-                        知识库刷新(fenquname);                   
+                {
+                    File.Delete(menupath);
+                    知识库刷新(fenquname);
                 }
-                }
-              
+            }
+
         }
 
-        
+
         private void 重命名ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (ControlFileClass.IsFolder(menupath))
@@ -757,19 +771,19 @@ namespace origin
                 if (str.Length == 0)
                 {
                     MessageBox.Show("没有输入,无效操作");
-                    return ;
+                    return;
                 }
                 Directory.SetCurrentDirectory(rootpath + @"\" + "txt");
-                if (ControlFileClass.GetFileName(menupath) == str )//判断重命名是否和原名字相同
+                if (ControlFileClass.GetFileName(menupath) == str)//判断重命名是否和原名字相同
                 {
                     MessageBox.Show("文件夹名不能相同，请重新输入");
                     return;
                 }
                 ControlFileClass test = new ControlFileClass(rootpath + @"\" + "txt", false);
                 ArrayList x = test.FileListName;
-                foreach(String temp in x)
+                foreach (String temp in x)
                 {
-                    if(temp == str)//判断重命名是否与其他文件夹重名
+                    if (temp == str)//判断重命名是否与其他文件夹重名
                     {
                         MessageBox.Show("已存在目标名文件夹，请重新输入");
                         return;
@@ -790,7 +804,7 @@ namespace origin
                 string filename = ControlFileClass.GetFileName(menupath);
                 string foldername = ControlFileClass.GetFileName(ControlFileClass.GetFolderPath(menupath));
                 Directory.SetCurrentDirectory(rootpath + @"\" + "txt" + @"\" + foldername);
-                if(filename == str + ".txt")//判断重命名是否和原名字相同
+                if (filename == str + ".txt")//判断重命名是否和原名字相同
                 {
                     MessageBox.Show("文件名不能相同，请重新输入");
                     return;
@@ -805,11 +819,38 @@ namespace origin
                         return;
                     }
                 }
-                Directory.Move(filename, str + ".txt");//使用filename但是get的是folder
+                File.Move(filename, str + ".txt");//使用filename但是get的是folder
                 Directory.SetCurrentDirectory(rootpath);
                 知识库刷新(fenquname);
             }
-            
+
+        }
+
+        private void 导出ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            dialog.Description = "请选择文件路径";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string foldPath = dialog.SelectedPath;
+                //MessageBox.Show("已选择文件夹:" + foldPath, "选择文件夹提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (ControlFileClass.IsFolder(menupath))
+                {
+                    string filename = ControlFileClass.GetFileName(menupath);
+                    ControlFileClass.CopyFolder(menupath, foldPath, filename);
+                    MessageBox.Show("知识库导出成功");
+                }
+                else
+                {
+                    string filename = ControlFileClass.GetFileName(menupath);
+                    string temppath = ControlFileClass.GetFolderPath(menupath);
+                    ControlFileClass.CopyFile(temppath, foldPath, filename);
+                    MessageBox.Show("知识导出成功");
+                }
+
+            }
+
+
         }
 
         #endregion
@@ -834,12 +875,12 @@ namespace origin
                 DirectoryInfo di = new DirectoryInfo(默认路径);
                 foreach (var item in di.GetDirectories())
                 {
-                    if (item.Name.Contains( 搜索内容))
+                    if (item.Name.Contains(搜索内容))
                     {
                         ListViewItem tn1 = default(ListViewItem);
                         try
                         {
-                            tn1 = new ListViewItem("分区:"+Path.GetFileName(item.FullName));
+                            tn1 = new ListViewItem("分区:" + Path.GetFileName(item.FullName));
                             tn1.Tag = item.Name;
                             搜索结果listView.Items.Add(tn1);
                         }
@@ -851,7 +892,7 @@ namespace origin
                     }
                     Application.DoEvents();
                     DirectoryInfo 分区名 = new DirectoryInfo(item.FullName);
-                    foreach(var 知识文件 in 分区名.GetFiles())
+                    foreach (var 知识文件 in 分区名.GetFiles())
                     {
                         if (知识文件.Name.Contains(搜索内容))
                         {
@@ -859,7 +900,7 @@ namespace origin
                             try
                             {
                                 tn2 = new ListViewItem(" 知识库:" + Path.GetFileName(知识文件.FullName));
-                                tn2.Tag = 分区名.Name+"?"+知识文件.Name;
+                                tn2.Tag = 分区名.Name + "?" + 知识文件.Name;
                                 搜索结果listView.Items.Add(tn2);
                             }
                             catch
@@ -868,13 +909,13 @@ namespace origin
                                     搜索结果listView.Items.Remove(tn2);
                             }
                         }
-                        StreamReader 文件内容 = new StreamReader(知识文件.FullName, Encoding.UTF8);
+                        StreamReader 文件内容 = new StreamReader(知识文件.FullName, Encoding.Default);
                         string aLine;
                         // 控制while循环是否进行的变量，true打印文本，false跳出循环
                         int line = 1;
                         while (true)
                         {
-                            
+
                             aLine = 文件内容.ReadLine();
                             // aline=null -> 文本读完了，那么控制量condition结合if语句 跳出循环
                             if (aLine == null)
@@ -888,8 +929,8 @@ namespace origin
                                     ListViewItem tn3 = default(ListViewItem);
                                     try
                                     {
-                                        tn3 = new ListViewItem("  内容:" + Path.GetFileName(知识文件.FullName)+"第"+line+"行");
-                                        tn3.Tag = 分区名.Name + "?" + 知识文件.Name+"?"+知识文件.FullName;
+                                        tn3 = new ListViewItem("  内容:" + Path.GetFileName(知识文件.FullName) + "第" + line + "行");
+                                        tn3.Tag = 分区名.Name + "?" + 知识文件.Name + "?" + 知识文件.FullName;
                                         搜索结果listView.Items.Add(tn3);
                                     }
                                     catch
@@ -901,31 +942,31 @@ namespace origin
                             }
                             line++;
                         }
-                    }       
+                    }
                 }
             }
         }
-        private void 聚焦列表(string 聚焦名,ListView 列表名)
+        private void 聚焦列表(string 聚焦名, ListView 列表名)
         {
             ListViewItem foundItem = 列表名.FindItemWithText(聚焦名, true, 0);
             if (foundItem != null)
             {
                 列表名.TopItem = foundItem;  //定位到该项
-                foundItem.Focused=true;//没有先focus会跟前面 分区listView_SelectedIndexChanged 的代码出现产生异常
+                foundItem.Focused = true;//没有先focus会跟前面 分区listView_SelectedIndexChanged 的代码出现产生异常
                 foundItem.Selected = true;//目前只能是聚焦没办法选中
                 /*分区listView_SelectedIndexChanged(分区listView,EventArgs.Empty);*/
             }
         }
-       
+
         private void 搜索结果listView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (搜索结果listView.SelectedItems.Count == 0) return;
             ListView livi = (ListView)sender;
             string type = livi.FocusedItem.Text;
-            tabControl1.SelectedIndex=0;
+            tabControl1.SelectedIndex = 0;
             if (type.Contains("分区:"))
             {
-                聚焦列表(livi.FocusedItem.Tag.ToString(),this.分区listView);
+                聚焦列表(livi.FocusedItem.Tag.ToString(), this.分区listView);
             }
             else if (type.Contains("知识库:"))
             {
@@ -962,6 +1003,11 @@ namespace origin
                 string fileName = "<文件：http://File-" + o.FileName + " >\n";
                 rtbInfo.AppendText(fileName);
                 //this.rtbInfo.Controls.Add(CreateSoundPic(fileName));
+                log.Info("插入文件：" + o.FileName);
+            }
+            else
+            {
+                log.Error("插入文件失败:未选择文件");
             }
         }
 
@@ -976,8 +1022,41 @@ namespace origin
                 string fileName = "<音乐：http://Music-" + o.FileName + " >\n";
                 rtbInfo.AppendText(fileName);
                 //this.rtbInfo.Controls.Add(CreateSoundPic(fileName));
+                log.Info("插入音乐：" + o.FileName);
+            }
+            else
+            {
+                log.Error("插入音乐失败:未选择音乐");
             }
         }
+
         #endregion
+
+        #region 多媒体使用帮助说明显示
+        private void btnSave_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("保存", btnSave);
+        }
+
+        private void 插入图片_MouseHover(object sender, EventArgs e)
+        {
+            toolTip2.Show("插入图片", btnPicture);
+        }
+
+        private void 插入音乐_MouseHover(object sender, EventArgs e)
+        {
+            toolTip3.Show("插入音乐", btnMusic);
+        }
+
+        private void 插入附件_MouseHover(object sender, EventArgs e)
+        {
+            toolTip4.Show("插入附件", btnFile);
+        }
+        #endregion
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            log.Info("关闭程序");
+        }
     }
 }

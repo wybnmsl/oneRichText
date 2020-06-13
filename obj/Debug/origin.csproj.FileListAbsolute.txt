@@ -108,3 +108,62 @@ C:\Users\MSI\Desktop\团队项目最终调试\oneRichText\oneRichText\obj\Debug\
 C:\Users\MSI\Desktop\团队项目最终调试\oneRichText\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
 C:\Users\MSI\Desktop\团队项目最终调试\oneRichText\oneRichText\obj\Debug\一个.exe
 C:\Users\MSI\Desktop\团队项目最终调试\oneRichText\oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目最终调试\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\一个.pdb
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\bin\Debug\一个.exe.config
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\bin\Debug\一个.exe
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\bin\Debug\一个.pdb
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\一个.exe
+C:\Users\acer\Desktop\大三下\团队开发\开发\oneRichText右键菜单添加导出功能\oneRichText右键菜单添加导出功能\oneRichText\obj\Debug\一个.pdb
+C:\Users\Teriss\Desktop\Code\oneRichText\bin\Debug\一个.exe.config
+C:\Users\Teriss\Desktop\Code\oneRichText\bin\Debug\一个.exe
+C:\Users\Teriss\Desktop\Code\oneRichText\bin\Debug\一个.pdb
+C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\一个.exe
+C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\bin\Debug\一个.exe.config
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\bin\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\bin\Debug\一个.pdb
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\一个.exe
+C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\一个.pdb
