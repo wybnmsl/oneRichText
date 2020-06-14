@@ -137,33 +137,55 @@ C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\一个.Properties.Resources.r
 C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
 C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\一个.exe
 C:\Users\Teriss\Desktop\Code\oneRichText\obj\Debug\一个.pdb
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\bin\Debug\一个.exe.config
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\bin\Debug\一个.exe
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\bin\Debug\一个.pdb
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.Form1.resources
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\一个.Properties.Resources.resources
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\一个.exe
-C:\Users\MSI\Desktop\oneRichText(2)\oneRichText\obj\Debug\一个.pdb
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\bin\Debug\一个.exe.config
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\bin\Debug\一个.exe
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\bin\Debug\一个.pdb
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.Form1.resources
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\一个.Properties.Resources.resources
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\一个.exe
-C:\Users\MSI\Desktop\团队项目第六组第十三周\oneRichText(2)\oneRichText\obj\Debug\一个.pdb
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\bin\Debug\一个.exe.config
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\bin\Debug\一个.exe
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\bin\Debug\一个.pdb
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.Form1.resources
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\一个.Properties.Resources.resources
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\一个.exe
-C:\Users\MSI\Desktop\团队项目 界面测试\oneRichText\obj\Debug\一个.pdb
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\一个.exe.config
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\一个.exe
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\一个.pdb
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\origin.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\origin.Form1.resources
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\一个.Properties.Resources.resources
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\origin.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\origin.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\一个.exe
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\一个.pdb
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Memory.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Buffers.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Memory.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\obj\Debug\origin.csproj.CopyComplete
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Npgsql.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\SqlSugar.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Zstandard.Net.dll
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Npgsql.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\Renci.SshNet.xml
+C:\Users\Administrator\Documents\WeChat Files\yebaihedejuhua\FileStorage\File\2020-05\oneRichText\oneRichText\bin\Debug\System.Threading.Tasks.Extensions.xml

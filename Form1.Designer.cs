@@ -116,7 +116,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "知识库";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // contextMenuStrip1
             // 
@@ -616,7 +615,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "分区";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // splitContainer1
             // 
@@ -661,12 +659,11 @@
             this.tabPage1.ImageIndex = 0;
             this.tabPage1.Location = new System.Drawing.Point(44, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(304, 579);
             this.tabPage1.TabIndex = 0;
             this.toolTip1.SetToolTip(this.tabPage1, "显示导航");
             this.tabPage1.ToolTipText = "显示导航";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -697,7 +694,7 @@
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(44, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(304, 579);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.ToolTipText = "显示搜索";
@@ -729,12 +726,11 @@
             this.tableLayoutPanel3.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(3);
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(292, 41);
             this.tableLayoutPanel3.TabIndex = 1;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // textBox1
             // 
